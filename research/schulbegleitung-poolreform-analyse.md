@@ -48,7 +48,7 @@ Der Entwurf hebt das an, was in Pinneberg kommunal erprobt wird — auf Bundeseb
 | 4 | Kommt 100 % Pool? | **Nein, aber die Richtung ist eindeutig** — und seit dem Referentenentwurf 1. KJHSRG (03/2026, siehe Abschnitt 0) bundesgesetzlich untermauert. Ein Individualanspruch bleibt, aber nur noch für Fälle, in denen **ausschließlich** eine 1:1‑Begleitung hilft. Realistisch ist bis 2028/2030 **Pool als Regelfall im Grundschulbereich**, Einzelfall als eng begrenzte Ausnahme. |
 | 5 | Welche Kriterien, welche Behörde? | Es entscheiden die **Kreise und kreisfreien Städte** als Träger der Jugendhilfe (SGB VIII) und der Eingliederungshilfe (SGB IX) — konkret Jugendamt/Amt für Teilhabe, politisch abgesichert durch **Jugendhilfeausschuss und Kreistag**, operativ über die **zentrale Vergabestelle**. Das Schulamt ist Mit‑Entscheider, hat aber keine Vertragshoheit. |
 | 6 | Welche Voraussetzungen für Verträge? | Je nach Modell zwei völlig verschiedene Wege: **Vergaberecht** (EU‑Ausschreibung, Pinneberg‑Modell) oder **Vereinbarungs-/Interessenbekundungsverfahren** (§§ 78a ff. SGB VIII, §§ 123 ff. SGB IX — Segeberg, Schleswig‑Flensburg). Gefordert werden u. a. nachweisbare langjährige Erfahrung, regionale Verankerung, Fortbildungs- und Qualifizierungskonzept, Festanstellung statt Honorarkräften, Schutzkonzept nach §§ 8a/72a SGB VIII. |
-| 7 | Braucht SKP besser ausgebildete Kräfte? | **Für die Basiskräfte nein, für die Steuerungsebene ja.** Neu und geschäftskritisch ist die **Teamleitung/Koordination** — dafür verlangen die Träger explizit pädagogische Fachkräfte (Sozialpädagogik, Pädagogik, Erzieher:in). Ohne diese Funktion ist SKP nicht ausschreibungsfähig. |
+| 7 | Braucht SKP besser ausgebildete Kräfte? | **Für die Basiskräfte nein, für die Steuerungsebene ja.** Die Reform führt **kein Fachkräftegebot** ein und lockert die Eignungsprüfung sogar (Abschnitt 6.4a). Neu und geschäftskritisch ist die **Teamleitung/Koordination** — dafür verlangen die Träger explizit pädagogische Fachkräfte (Sozialpädagogik, Pädagogik, Erzieher:in). Ohne diese Funktion ist SKP nicht ausschreibungsfähig. |
 | 8 | Wird der Markt umkämpfter? | **Ja, deutlich** — und zugleich strukturell anders: Aus vielen kleinen Einzelfallaufträgen werden **wenige große, langlaufende Standortverträge**. „Konzentration der Leistungserbringer" ist in mehreren Modellen ein **ausdrückliches Projektziel**. |
 | 9 | Eine Schule = eine Firma? | **Ja, das ist der Regelfall** in allen dokumentierten Modellen — bundesweit ausdrücklich empfohlen. Aufteilung einer Schule auf mehrere Anbieter widerspricht der Pool‑Logik. Aufgeteilt wird auf **Losebene (Region/Stadt)**, nicht innerhalb einer Schule. |
 | 10 | Wie groß sind die Pool‑Gruppen? | Es gibt **keine feste Kennzahl**. Der Pool ist regelmäßig **schulscharf**; das Budget ergibt sich aus summierten Einzelbedarfen oder einer Verteilmatrix. Pinneberg rechnet mit **1 Klassenassistenz je Klasse** (24 Wochenstunden Kl. 1–2, 30 Wochenstunden Kl. 3–4) und **1 Teamleitung je 15 Kräfte**. |
@@ -480,6 +480,75 @@ Gesetzliche Mindestvoraussetzung nach **§ 124 Abs. 2 SGB IX** sind lediglich di
 
 > **Handlungsempfehlung:** SKP sollte **nicht** flächendeckend höher qualifizieren. Sinnvoll ist eine **Zwei‑Klassen‑Strategie**: (a) 1–2 pädagogische Fachkräfte als Teamleitungen aufbauen oder einstellen — das ist die Eintrittskarte; (b) für den Bestand ein **eigenes, dokumentiertes Fortbildungscurriculum** aufsetzen. Letzteres ist ein **hartes Zuschlagskriterium** und zugleich das billigste Differenzierungsmerkmal im Wettbewerb. Anschlussfähig ist der Zertifikatskurs für Schulische Assistenzkräfte (Basiskurs über Kreisel e. V., Aufbaukurs „Qualifizierung der Schulischen Assistenzkräfte 2.0" über KOMMA) — Schulbegleitungen können **nachrangig** teilnehmen.
 
+### 6.4a Adressiert die Reform das Qualifikationsproblem?
+
+Die Forschung ist sich seit Jahren einig, dass die fehlende Qualifikation das Kernproblem der Schulbegleitung ist. Michael Wrase fasst den Stand im Verfassungsblog zusammen:
+
+> „Als besonders problematisch gilt die mangelnde pädagogische Qualifikation vieler Schulbegleitungen (siehe etwa Dworschak/Markowetz). **Anforderungen oder Standards – wie das Fachkräftegebot gem. § 72 SGB VIII – gibt es für sie nicht**; ihre Beschäftigungsverhältnisse sind zudem oft befristet und schlecht vergütet (Lübeck/Heinrich)."
+
+Daraus stammt das Bild der „**hilflos häkelnden Helfer**" (Heinrich/Lübcke) — eine Schulbegleiterin, die ihre passive Zeit in der Klasse mit Häkeln verbringt.
+
+**Antwort: Nein. Die Reform adressiert das Qualifikationsproblem nicht — und bewegt sich an einer Stelle sogar in die Gegenrichtung.**
+
+#### Befund 1 — Der Gesetzentwurf enthält keinen Qualifikationsstandard
+
+Weder § 35d Abs. 4 noch § 80a SGB VIII-E stellen Anforderungen an die Qualifikation der Bildungsassistenz. Das **Fachkräftegebot des § 72 SGB VIII wird nicht auf sie erstreckt**. Beide großen Fachstellungnahmen bestätigen das als **Lücke**:
+
+- **AGJ** (Stellungnahme zum 1. KJHSRG-RefE): Die Bedarfe reichten „von einer strukturgebenden Anleitung wegen Konzentrationseinschränkungen, über Hilfeleistung bei einer Insulintherapie aufgrund von Diabetes bis hin zur Gewährleistung von Sicherheit und Erster Hilfe bei epileptischen Anfällen oder … Kommunikations- und Anpassungsunterstützung im Kontext des Autismus-Spektrums. **In Abhängigkeit hiervon sind sehr unterschiedliche fachliche Qualifikationen in der ‚infrastrukturellen Bildungsassistenz' abzudecken.**" Die AGJ moniert ausdrücklich fehlende „Vorgaben zur Feststellung ungedeckter Bedarfe im Einzelfall" und zu den Anforderungen an die Planung.
+- **Deutscher Verein** (DV 5/26): begrüßt die Rechtsgrundlage, kritisiert das ungeklärte Verhältnis von Infrastruktur- und Individualleistung — **äußert sich zur Qualifikation nicht, weil der Entwurf dazu nichts regelt**.
+
+#### Befund 2 — Wo der Entwurf Qualifikation berührt, lockert er
+
+Der Entwurf ändert §§ 45, 78c und 79 SGB VIII und führt einen **aufgabenspezifischen Kompetenzansatz** ein: Die fachliche Eignung des Personals soll „anhand der jeweiligen konkreten Aufgaben und Funktionen beurteilt werden" statt anhand formaler Berufsabschlüsse. Der Deutsche Verein dazu:
+
+> „Ein **Anspruch auf Anerkennung als Fachkraft im Einzelfall bei entsprechender Eignung für konkrete Aufgaben** wird so möglicherweise gestärkt."
+
+Bisher arbeiten die Länder mit **Fachkraft-Positivlisten**. Der Entwurf öffnet diese Logik. Fachlich ist das vertretbar — praktisch erleichtert es den Einsatz formal nicht qualifizierten Personals.
+
+#### Befund 3 — Die Praxis bewegt sich bereits abwärts
+
+Hamburg schreibt zum Schuljahr 2026/27 fest: Freiwilligendienstleistende werden vollständig über Kombinationsmaßnahmen organisiert, und **höher qualifizierte Schulbegleitung nur noch „in begründeten und komplexen Einzelfällen"**. Die GEW Hamburg kritisiert genau das.
+
+#### Befund 4 — Der ökonomische Grund dafür
+
+Die DISW-Evaluation Ostholstein benennt den Zielkonflikt schonungslos:
+
+> „**Fachkräfte** sind oft von Seiten der Schule und Eltern gewünscht, bedeuten jedoch im Poolgedanken **weniger Präsenzstunden von Schulbegleitungen insgesamt** und sind aufgrund von Fachkräftemangel schwierig zu akquirieren."
+
+Bei gedeckeltem Budget sind Qualifikation und Betreuungsumfang ein **Nullsummenspiel**. Eine Reform, die 200,6 Mio. € im ersten Jahr und bis zu 2,7 Mrd. € jährlich einsparen soll, kann kein Fachkräftegebot einführen — das wäre der teuerste denkbare Einzelposten.
+
+#### Befund 5 — Es gibt weiterhin kein Berufsbild
+
+Für die Schulbegleitung existiert **keine staatlich geregelte Ausbildung und keine Ausbildungsordnung**. Qualifizierung findet über privatwirtschaftliche Lehrgänge statt (bfw, DAA, BNW, PBW, Berger Bildungsinstitut u. a., teils mit Bildungsgutschein). In Schleswig-Holstein gibt es den **Zertifikatskurs für Schulische Assistenzkräfte** (Basiskurs über Kreisel e. V., Aufbaukurs „Qualifizierung der Schulischen Assistenzkräfte 2.0" über KOMMA) — dort sind Schulbegleitungen aber **ausdrücklich nur nachrangig** zugelassen.
+
+#### Wo Professionalisierung tatsächlich stattfindet: eine Ebene höher
+
+Der Qualifikationsdruck wird **nicht auf die Kraft am Kind, sondern auf die Steuerungsebene und auf den Träger** verlagert:
+
+| Quelle | Aussage |
+|---|---|
+| **PoMoS-Studie** (Uni Regensburg) | Kernbefund: „**Pool-Modell bedarf Pool-Management!**"; Empfehlung: Koordinationskraft oder Organisationsteam einsetzen — und „Schulbegleitungen qualifizieren" |
+| **Kreis Pinneberg** | Teamleitung: **ausschließlich** Sozialpädagog:innen, Pädagog:innen, Erzieher:innen oder als vergleichbar anerkannte Fachkräfte |
+| **Rahmenleistungsbeschreibung NRW** | „Als Schulbegleiter*innen können **angelernte Kräfte** eingesetzt werden … Für [Leitung und Koordination] werden **pädagogische Fachkräfte** eingesetzt" |
+| **Rahmenleistungsbeschreibung NRW** | 🔑 „Grund- und weiterführende Qualifikationen für das Aufgabenfeld der Schulbegleitung sind geboten und **Aufgabe der Leistungserbringer**" |
+| **Landesrahmenvertrag SH, § 10 / § 23 Abs. 3** | Leistungserbringer müssen Fortbildung sicherstellen; sie wird über die Vergütung refinanziert |
+
+Der Staat setzt also **keinen Standard**, sondern **delegiert die Qualifizierung an die Träger** — und kauft sie anschließend über Zuschlagskriterien ein. In der Pinneberger Ausschreibung ist „Qualifizierungskonzept / Fort- und Weiterbildungsplanung" eines von sieben Zuschlagskriterien; der Kreis Düren gewichtet Qualität insgesamt mit **60 von 100 Punkten**.
+
+#### Was das für SKP bedeutet
+
+> 🟢 **Das ist die günstigste Konstellation, die SKP in dieser Reform bekommen kann.** Weil es keinen gesetzlichen Standard gibt, ist ein dokumentiertes Qualifizierungskonzept **kein Pflichtaufwand, sondern ein Wettbewerbsvorteil** — und zwar einer, der vergleichsweise wenig kostet und in der Wertung überproportional zählt.
+
+Drei Ableitungen:
+
+1. **Kein flächendeckendes Höherqualifizieren.** Wer die Basiskräfte teuer aufwertet, während Wettbewerber mit angelernten Kräften und Freiwilligendienstleistenden kalkulieren, verliert über den Preis — ohne dass die Zuschlagskriterien das ausgleichen.
+2. **Stattdessen: sichtbare, dokumentierte, günstige Qualifizierung.** Ein eigenes Curriculum mit Nachweisen, Teilnahmelisten und Evaluationsschleife schlägt in der Wertung eine teure Personalstruktur. Genau das verlangt Pinneberg — und verlangt bei Mehrträgervergabe sogar ein **gemeinsam mit Wettbewerbern** entwickeltes Konzept.
+3. **Die Teamleitung ist die einzige Stelle, an der formale Qualifikation zwingend ist.** Dort ist sie Zugangsvoraussetzung, kein Qualitätsbonus.
+
+**Und ein Risiko, das man kennen sollte:** Wenn Qualifikation dauerhaft ungeregelt bleibt, während Budgets gedeckelt werden, wandert der Markt langfristig Richtung Mindestlohn und Freiwilligendienst. Ein Anbieter, der auf Qualität setzt, braucht dann Auftraggeber, die Qualität auch gewichten. Die 60:40-Wertung in Düren zeigt, dass es diese Auftraggeber gibt — die Hamburger Umstellung zeigt, dass es sie nicht überall gibt.
+
+---
+
 ### 6.5 Wird der Markt stärker umkämpft sein?
 
 **Ja — und zwar aus drei sich verstärkenden Gründen.**
@@ -797,6 +866,11 @@ Diese Informationen sind **nicht öffentlich verfügbar** und müssen bei den zu
 - Dworschak, W., Lüders, L. M. & Fitzek, T. (2023): „Schulbegleitung an allgemeinen Schulen weiterentwickeln. Pool‑Modelle an (Montessori‑)Regelschulen in Bayern", doi:10.5283/epub.54488
 - PoMoS‑Ergebnispräsentation, Bezirkstag Mittelfranken, 27.07.2023: https://www.spdbezirkstag.de/workspace/media/static/2023-07-27-pomos-praesentation-651eb508598c2.pdf
 - Universität Regensburg — Projektseite PoMoS: https://www.uni-regensburg.de/humanwissenschaften/fakultaet/professuren/bildungswissenschaft/paedagogik-bei-geistiger-behinderung-einschliesslich-inklusiver-paedagogik/forschung/pomos
+
+**Qualifikation und Professionalisierung**
+- Rahmenleistungsbeschreibung Schulbegleitung NRW (Anlage A.2.6), Ziffer 8 „Personelle Ausstattung/Personalqualifikation": https://lrv-sgbix.lvr.de/media/media_lrvo/anlagen_zum_landesrahmenvertrag___131_sgb_ix/a___rahmenleistungsbeschreibungen/leistungen_fuer_kinder_und_jugendliche/Anlage_A_02_06_RLB_Schulbegleitung.pdf
+- Deutscher Verein, Empfehlungen zur Umsetzung und Weiterentwicklung von Schulassistenz (DV 5/20, 14.09.2021): https://www.deutscher-verein.de/fileadmin/user_upload/dv/pdfs/Empfehlungen_Stellungnahmen/2021/dv-5-20_schulassistenz.pdf
+- § 124 Abs. 2 SGB IX (persönliche Mindestvoraussetzungen) und § 72 SGB VIII (Fachkräftegebot, gilt für Schulbegleitung **nicht**)
 
 **Fachempfehlungen**
 - BAGüS / Deutscher Landkreistag / Deutscher Städtetag: „Orientierungshilfe zur Schulbegleitung unter besonderer Berücksichtigung der Bildung von Schulbegleiterpools", Juni 2019: https://www.der-paritaetische.de/fileadmin/user_upload/Schwerpunkte/Bundesteilhabegesetz/doc/190709_Orientierungshilfe_Schulbegleitung.pdf
