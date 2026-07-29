@@ -10,6 +10,34 @@ Quellengrundlage: Landtagsdrucksachen Schleswig‑Holstein, Konzept- und Ausschr
 
 ---
 
+## 0. Nachtrag — die Reform ist seit März 2026 Bundesgesetzgebung
+
+> 🔴 **Wichtigste Aktualisierung dieses Berichts.** Das BMBFSFJ hat am **23. März 2026** den Referentenentwurf für ein **Erstes Kinder- und Jugendhilfestrukturreformgesetz (1. KJHSRG)** vorgelegt. Die Frist für Stellungnahmen der Länder und Verbände endete am **16. April 2026**. Inkrafttreten geplant zum **1. Januar 2028**.
+
+Der Entwurf hebt das an, was in Pinneberg kommunal erprobt wird — auf Bundesebene:
+
+- **§ 80a SGB VIII‑E:** Öffentliche Jugendhilfeträger planen gemeinsam mit den Schulen **„Bildungsassistenz" als Infrastrukturleistung**. Das ist ein **Planungsauftrag**, der von den Ländern landesrechtlich zu konkretisieren ist.
+- **§ 35d Abs. 4 Satz 2 SGB VIII‑E:** Ein **individueller Rechtsanspruch** auf Anleitung und Begleitung soll nur noch bestehen, wenn „den Besonderheiten des Einzelfalles **ausschließlich**" durch individuelle Begleitung entsprochen werden kann.
+- **Vorranggebot** zugunsten von Infrastruktur- und Regelangeboten sowie Jugendsozialarbeit.
+- **Gesamtzuständigkeit der Jugendämter** ab 2028 auch für Kinder mit körperlicher/geistiger Behinderung — bundesweit rund **80.000 Minderjährige mit Schulbegleitung** betroffen.
+- Ein **zweites Gesetz** mit weiteren Effizienz- und Kostendämpfungsmaßnahmen ist für **2027** angekündigt.
+
+**Bewertung:** Die drei Kernaussagen dieses Berichts werden dadurch nicht revidiert, sondern **verschärft**:
+
+| Bisherige Einschätzung | Wirkung des Entwurfs |
+|---|---|
+| Pool ist Kreisentscheidung, Flickenteppich | Wird bundesrechtlicher **Regelfall mit Vorrang** — der Flickenteppich löst sich in eine Richtung auf |
+| Individualanspruch bleibt als Bremse | Bleibt formal, aber nur noch für Fälle, in denen **ausschließlich** 1:1 hilft — deutlich engere Hürde |
+| „Nicht 100 % Pool" | Bleibt richtig, aber der verbleibende Einzelfallanteil dürfte **kleiner ausfallen** als in Abschnitt 6.10 geschätzt |
+
+**Kritik der Fachwelt:** Die AGJ warnt vor einer „Pauschallösung", bei der der individuelle Bedarf untergeht; der Bundesverband Lebenshilfe warnte am 27.04.2026 („Inklusion darf kein Sparmodell werden") — Kernsatz: „Wer eine Eins‑zu‑eins‑Begleitung braucht, bekommt eine Drei‑zu‑eins‑Lösung." Michael Wrase (Universität Hildesheim) hält den Entwurf im Verfassungsblog vom 28.05.2026 für **weder verfassungs- noch völkerrechtskonform** (Art. 24 UN‑BRK) und kritisiert, dass der Planungsauftrag des § 80a SGB VIII‑E **nicht durch einen Individualanspruch unterlegt** ist.
+
+**Bestandsschutz:** Bestehende Bewilligungsbescheide behalten laut Fachberichterstattung ihre Gültigkeit über 2028 hinaus.
+
+> **Für SKP heißt das:** Der Zeitdruck aus Abschnitt 8 gilt unverändert, aber der Zielzustand ist klarer. Wer 2028 keine Standort-/Infrastrukturverträge hat, hat kein Grundschulgeschäft mehr. Gleichzeitig entsteht mit der „Bildungsassistenz" ein bundesweit einheitlicher Leistungstyp — wer ihn früh beherrscht, kann das Know‑how über Kreisgrenzen hinweg einsetzen.
+
+---
+
 ## 1. Management Summary — die zwölf Fragen in Kurzform
 
 | # | Frage | Kurzantwort |
@@ -17,7 +45,7 @@ Quellengrundlage: Landtagsdrucksachen Schleswig‑Holstein, Konzept- und Ausschr
 | 1 | Wo gibt es das Pool‑System schon? | In Schleswig‑Holstein bei **nahezu allen** Kreisen und kreisfreien Städten in irgendeiner Form. Flächendeckend umgesetzt: **Lübeck** (seit 2013/14), **Flensburg** (alle Grundschulen seit 2022/23). Weit fortgeschritten: **Schleswig‑Flensburg**, **Nordfriesland**, **Ostholstein**, **Herzogtum Lauenburg**, **Pinneberg**. Hamburg stellt zum Schuljahr **2026/27** auf „Kombinationsmaßnahmen" um. |
 | 2 | Wie läuft die Umsetzung im Kreis Pinneberg? | Aus einem Poolmodell an 7 Grundschulen in **Tornesch‑Uetersen** wurde das Konzept **„Klassenassistenz"** entwickelt: Umstieg vom Individualanspruch auf ein **infrastrukturelles Angebot** (1 Klassenassistenz je Klasse), vergeben über eine **europaweite Ausschreibung**. Der Kreistag hat die Einführung am 11.12.2024 um **zwei Jahre verschoben**. |
 | 3 | Was bedeutet das für SKP? | Der Kernmarkt (Einzelfallbewilligungen nach § 35a SGB VIII / § 112 SGB IX) schrumpft dort, wo Pools kommen, **auf null**. Wer keinen Pool‑/Ausschreibungszuschlag bekommt, verliert an diesem Standort das gesamte Volumen — nicht anteilig, sondern vollständig. |
-| 4 | Kommt 100 % Pool? | **Nein, aber die Richtung ist eindeutig.** Der individuelle Rechtsanspruch bleibt bundesrechtlich bestehen und ist nicht abschaffbar. Realistisch ist bis ca. 2030 **Pool als Regelfall im Grundschulbereich**, Einzelfall als begründete Ausnahme; weiterführende Schulen und Förderzentren folgen später und unvollständig. |
+| 4 | Kommt 100 % Pool? | **Nein, aber die Richtung ist eindeutig** — und seit dem Referentenentwurf 1. KJHSRG (03/2026, siehe Abschnitt 0) bundesgesetzlich untermauert. Ein Individualanspruch bleibt, aber nur noch für Fälle, in denen **ausschließlich** eine 1:1‑Begleitung hilft. Realistisch ist bis 2028/2030 **Pool als Regelfall im Grundschulbereich**, Einzelfall als eng begrenzte Ausnahme. |
 | 5 | Welche Kriterien, welche Behörde? | Es entscheiden die **Kreise und kreisfreien Städte** als Träger der Jugendhilfe (SGB VIII) und der Eingliederungshilfe (SGB IX) — konkret Jugendamt/Amt für Teilhabe, politisch abgesichert durch **Jugendhilfeausschuss und Kreistag**, operativ über die **zentrale Vergabestelle**. Das Schulamt ist Mit‑Entscheider, hat aber keine Vertragshoheit. |
 | 6 | Welche Voraussetzungen für Verträge? | Je nach Modell zwei völlig verschiedene Wege: **Vergaberecht** (EU‑Ausschreibung, Pinneberg‑Modell) oder **Vereinbarungs-/Interessenbekundungsverfahren** (§§ 78a ff. SGB VIII, §§ 123 ff. SGB IX — Segeberg, Schleswig‑Flensburg). Gefordert werden u. a. nachweisbare langjährige Erfahrung, regionale Verankerung, Fortbildungs- und Qualifizierungskonzept, Festanstellung statt Honorarkräften, Schutzkonzept nach §§ 8a/72a SGB VIII. |
 | 7 | Braucht SKP besser ausgebildete Kräfte? | **Für die Basiskräfte nein, für die Steuerungsebene ja.** Neu und geschäftskritisch ist die **Teamleitung/Koordination** — dafür verlangen die Träger explizit pädagogische Fachkräfte (Sozialpädagogik, Pädagogik, Erzieher:in). Ohne diese Funktion ist SKP nicht ausschreibungsfähig. |
@@ -775,6 +803,14 @@ Diese Informationen sind **nicht öffentlich verfügbar** und müssen bei den zu
 - Bayerisches Staatsministerium für Unterricht und Kultus / Bayerischer Bezirketag: „Pooling von Schulbegleitungen nach dem SGB IX an Förderschulen — Gemeinsame Empfehlungen", 12.03.2025: https://www.bay-bezirke.de/data/download/20250313_schulbegleitung_pooling_handlungsempfehlungen_baybt_stmuk.pdf
 - Deutscher Verein für öffentliche und private Fürsorge: Empfehlungen zur Umsetzung und Weiterentwicklung von Schulassistenz (DV 5/20): https://www.deutscher-verein.de/fileadmin/user_upload/dv/pdfs/Empfehlungen_Stellungnahmen/2021/dv-5-20_schulassistenz.pdf
 - Kreis Schleswig‑Flensburg: „Infrastrukturelles Angebot Schulbegleitung (Poollösung)": https://www.kobranet.de/wp-content/uploads/Forum-1_-Pool-Kreis-SL-FL-1.pdf
+
+**Referentenentwurf 1. KJHSRG (Stand 03/2026) und Reaktionen**
+- DIJuF — Materialsammlung zum 1. KJHSRG‑E inkl. Synopsen und über 50 Stellungnahmen: https://dijuf.de/handlungsfelder/inklusives-sgb-viii/1-kjhsrg-e
+- Jugendhilfeportal — Roadmap zur Einführung der inklusiven Lösung: https://jugendhilfeportal.de/artikel/sgb-viii-reform/roadmap-zur-einfuehrung-der-inklusiven-loesung
+- AGJ — Stellungnahme zum Referentenentwurf (PDF): https://www.agj.de/fileadmin/files/positionen/2026/AGJ-StN_RefE_KJHSRG.pdf
+- Deutscher Verein — Stellungnahme DV 5/26 (PDF): https://www.deutscher-verein.de/fileadmin/user_upload/dv/pdfs/Empfehlungen_Stellungnahmen/2026/DV-5-26_Gesetz_zur_Strukturreform_KiJu.pdf
+- Wrase, M.: „Schulische Inklusion in Gefahr — Wie der neue Entwurf zur Schulbegleitung Kinder mit Förderbedarf schlechterstellt", Verfassungsblog, 28.05.2026: https://verfassungsblog.de/reform-eingliederungshilfe/
+- gegen-hartz.de — „SGB‑VIII‑Reform: Schulbegleitung wird neu verteilt": https://www.gegen-hartz.de/news/schwerbehinderung-sgb-viii-reform-schulbegleitung-wird-neu-verteilt-auch-wer-einen-bescheid-hat
 
 **Presse und Fachöffentlichkeit**
 - Deutsches Schulportal: „Immer mehr Kinder bekommen Unterstützung durch eine Schulbegleitung": https://deutsches-schulportal.de/bildungswesen/immer-mehr-kinder-bekommen-unterstuetzung-durch-schulbegleiter/
