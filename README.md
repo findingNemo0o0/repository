@@ -9,6 +9,10 @@ auf Poolversorgung und deren Auswirkungen auf SKP (Uetersen).
   — Vollständige Analyse: Rechtslage, Landkarte der Poolmodelle in Schleswig-Holstein und
   Hamburg, Fallstudie Kreis Pinneberg („Klassenassistenz"), Antworten auf alle Einzelfragen,
   Fallzahlen und Trends, Risikobewertung, Fahrplan und Quellenverzeichnis.
+- [`research/vergabe-unterlagen-und-quellen.md`](research/vergabe-unterlagen-und-quellen.md)
+  — Praxisanhang: die Original-Ausschreibung des Kreises Pinneberg (TED 246925-2024) mit
+  Eignungs- und Zuschlagskriterien, Vergleichsverfahren anderer Kreise, Vergabeplattformen,
+  Musterverträge, Budgetformeln und das Verfahren bei Uneinigkeit über die Vergütung.
 
 ## Betrachtete Regionen
 
