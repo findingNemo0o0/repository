@@ -3,6 +3,11 @@
 **Deck:** `SKP-Marktanalyse-Schulbegleitung.pptx` · **6 Folien Hauptteil + 2 Anhang** · **12–15 Minuten**
 Sprechernotizen liegen in jeder Folie.
 
+**Design:** Haus-Standard aus `skp-design-template.pptx` — Layouts „Titel1-mit-Logo" und
+„Inhalt-1", Dreispaltenraster, Quicksand/Open Sans, Blau `#1A70B8` und Amber `#E0861A`.
+Inhalte sind unverändert gegenüber Version 3; getauscht wurde ausschließlich das Design.
+Schriften auf dem Vortragsrechner prüfen: **Quicksand** und **Open Sans** müssen installiert sein.
+
 ---
 
 ## Der Spannungsbogen

@@ -13,6 +13,9 @@ auf Poolversorgung und deren Auswirkungen auf SKP (Uetersen).
   — Praxisanhang: die Original-Ausschreibung des Kreises Pinneberg (TED 246925-2024) mit
   Eignungs- und Zuschlagskriterien, Vergleichsverfahren anderer Kreise, Vergabeplattformen,
   Musterverträge, Budgetformeln und das Verfahren bei Uneinigkeit über die Vergütung.
+- [`praesentation/`](praesentation/) — Marktanalyse als Präsentation für einen potenziellen
+  Käufer (8 Folien), erzeugt mit `build_deck.py` auf Basis des Haus-Designs
+  (`skp-design-template.pptx`), plus `vorstellplan.md` als Vortragsleitfaden.
 
 ## Betrachtete Regionen
 
