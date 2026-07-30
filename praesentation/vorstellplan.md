@@ -1,8 +1,8 @@
-# Vorstell-Plan — SKP Marktanalyse
+# Vorstell-Plan — SKP Marktanalyse (Version 2)
 
-**Deck:** `SKP-Marktanalyse-Schulbegleitung.pptx` · 13 Folien · **20 Minuten + 15 Minuten Fragen**
-**Publikum:** Kaufinteressent ohne Branchenkenntnis
-**Sprechernotizen** liegen in jeder Folie hinterlegt (Referentenansicht).
+**Deck:** `SKP-Marktanalyse-Schulbegleitung.pptx`
+**14 Folien Hauptteil + 5 Folien Anhang** · **20 Minuten + Fragen**
+**Publikum:** Kaufinteressent ohne Branchenkenntnis · Sprechernotizen liegen in jeder Folie.
 
 ---
 
@@ -11,11 +11,11 @@
 > **Der Markt wächst. Der Zugang zu ihm wird gerade neu vergeben.
 > Wer die Umstellung schafft, hat ein größeres und planbareres Geschäft. Wer sie verpasst, verliert Standorte komplett.**
 
-Drei Akte: **Kontext** (Folie 1–5, ca. 8 Min) → **Bruch** (Folie 6–8, ca. 6 Min) → **Bewertung** (Folie 9–13, ca. 6 Min).
+**Kontext** (1–5, ca. 8 Min) → **Bruch** (6–9, ca. 7 Min) → **Bewertung** (10–14, ca. 5 Min) → **Anhang** (15–19, nur auf Nachfrage)
 
-Alles Wichtige steht in drei Sätzen, die im Vortrag wörtlich fallen sollten:
+Drei Sätze, die im Vortrag wörtlich fallen sollten:
 1. *„Der Bedarf steigt seit zehn Jahren — die Kosten je Fall stärker als die Fallzahlen."*
-2. *„Künftig ist es pro Standort binär: Man ist koordinierender Träger — oder dort raus."*
+2. *„Künftig ist es pro Standort binär: koordinierender Träger — oder dort raus."*
 3. *„Der Zugang kostet eine Fachkraftstelle und ein Konzept. Das ist die Investitionsthese."*
 
 ---
@@ -24,49 +24,71 @@ Alles Wichtige steht in drei Sätzen, die im Vortrag wörtlich fallen sollten:
 
 | # | Folie | Zeit | Die eine Botschaft |
 |---|---|---|---|
-| 1 | **Titel** | 1' | Rahmen setzen, Kernthese vorlesen. Nicht erklären — kommt später. |
-| 2 | **Das Geschäft in 60 Sek.** | 2' | Drei Parteien: Kind, Kreis (zahlt), Schule (entscheidet mit). Betonen: **die Schulleitung ist der eigentliche Kunde.** |
-| 3 | **Nachfrage** | 2' | Förderquote 5,9 → 7,6 %. Inklusionsquote verdreifacht. Der Markt bricht nicht weg. |
-| 4 | **Standort** | 2' | Warum ausgerechnet SH und Hamburg: höchste Inklusions-, niedrigste Förderschulquoten → strukturell größerer Markt. |
-| 5 | **Marktvolumen** | 3' | **Wichtigster Chart.** Ausgaben wachsen doppelt so schnell wie Fallzahlen → Kosten je Fall ×2,4. Das ist der Auslöser der Reform. Hier kurz Pause machen. |
-| 6 | **Die Reform** | 2' | Vorher/Nachher in einem Bild. Betonen: drei Ebenen laufen **parallel**, die Kreise sind schon dabei. Kein Abwarten möglich. |
-| 7 | **Konsequenz** | 3' | Die Tabelle langsam durchgehen. Schlusssatz vorlesen: *binär.* Ergänzen: In Ostholstein wechseln auch die Mitarbeitenden mit. |
-| 8 | **Regionen** | 1,5' | Nicht vorlesen — nur die Ampel zeigen: zwei Regionen laufen bereits, zwei noch nicht. „Niedrig" ≠ „kein Handlungsbedarf" (Flensburg: zwei Jahre von Pilot auf flächendeckend). |
-| 9 | **Chancen** | 2' | Nur Punkt 3 und 4 hervorheben: regionale Verankerung ist **formales** Zuschlagskriterium, Qualität zählt 60 %. Der Rest darf gelesen werden. |
-| 10 | **Risiken** | 2' | Ehrlich vortragen. Kernpunkt: **kein Rechtsweg** — vier Träger haben geklagt und verloren, unanfechtbar. |
-| 11 | **Preisbindung** | 2,5' | Langsam. Bis zu neun Jahre Festpreis ohne Tarifausgleich. Die Ausschreibung belohnt kurzfristig den, der zu knapp kalkuliert. Konsequenz: Preisuntergrenze vor jedem Angebot. |
-| 12 | **Was zu tun ist** | 2' | Investitionsbedarf ist einmalig und überschaubar. Frühwarnindikator erwähnen — er kostet nichts. |
-| 13 | **Fazit** | 1' | Zwei Spalten vorlesen. Offene Punkte **aktiv** benennen, nicht verstecken. |
+| 1 | Titel | 1' | Kernthese vorlesen. Erwähnen, dass Folie 15–19 Anhang sind. |
+| 2 | Geschäft in 60 Sek. | 2' | Drei Akteure, **ein** Vertragspartner. Die Schule unterschreibt nie, entscheidet aber mit. |
+| 3 | Nachfrage | 2' | Förderquote 5,9 → 7,6 %. **Drei Viertel** des Zuwachses sind neue Diagnosen, nicht Wechsler von der Förderschule. |
+| 4 | Standort | 2' | SH und Hamburg sind überdurchschnittlich inklusiv → strukturell größerer Markt. Kehrseite mitnennen. |
+| 5 | Marktvolumen | 3' | **Wichtigster Chart.** Kosten je Fall ×2,4 — das ist der Auslöser der Reform. Kurz Pause. |
+| 6 | Die Reform | 2' | Drei Ebenen **parallel**, die Kreise sind schon dabei. Kein Abwarten möglich. |
+| 7 | Konsequenz | 2,5' | Tabelle langsam. Mengenrisiko-Definition unten vorlesen, dann: *binär*. |
+| 8 | Rechenbeispiel | 2,5' | Ja, im Klassenmodell verdoppelt sich die Stellenzahl — aber nur Pinneberg rechnet so. **Upside, nicht Basisannahme.** |
+| 9 | Regionen | 1,5' | Zwei Regionen laufen, zwei nicht. Weiterführende Schulen bleiben am längsten stabil. |
+| 10 | Chancen | 2' | Nur Punkt 3 und 4 hervorheben, Rest lesen lassen. |
+| 11 | Risiken | 2' | Ehrlich. Kernpunkt: **kein Rechtsweg**, unanfechtbar. |
+| 12 | Preisbindung | 2,5' | Bis zu neun Jahre Festpreis. Rechte Karte: Tarifverhandlungen verschwinden **nicht überall**. |
+| 13 | Was zu tun ist | 2' | Investition ist einmalig und überschaubar. Frühwarnindikator erwähnen. |
+| 14 | Fazit | 1' | Beide Spalten vorlesen. Offene Punkte **aktiv** benennen. |
+
+**Anhang — nur zeigen, wenn gefragt:**
+15 Übersicht · 16 Vergütungsmechanik (Zuschläge, Abschläge, Klassenfahrten) · 17 Zwei Wege zum Vertrag · 18 Vergabefähigkeit im Klartext · 19 Glossar
+
+---
+
+## Wo die bisherigen Rückfragen jetzt beantwortet sind
+
+| Frage | Folie |
+|---|---|
+| Wie hängt der Förderschul-Rückgang zusammen? | **3** (pp-Zerlegung + Keyline) |
+| Vertragspartner Kreis, Schule oder Jugendamt? | **2** (drei Rollenkarten) |
+| Gilt Schulbegleitung nur an Grundschulen? | **2** (Geltungsbereich) · **9** (Keyline) |
+| Ist das Budget strikt klassenabhängig? Klasse 1–13? | **8** (Rechenbeispiel + Fußnote) |
+| Was heißt Mengenrisiko? | **7** (Definition im Callout) |
+| Welche Zuschläge und Abschläge gibt es? | **16** (Anhang) |
+| Waren Klassenfahrten bisher vergütet? | **2** (kurz) · **7** (Tabellenzeile) · **16** (ausführlich) |
+| Getrennte Umsatzausweisung, Präqualifizierung? | **18** (Anhang, Klartext) |
+| Verschwinden jährliche Tarifverhandlungen? | **12** (rechte Karte) · **17** (Anhang) |
+| Wäre eine Kraft je Klasse nicht sogar besser? | **8** (Quote vorher/nachher) |
 
 ---
 
 ## Drei Regeln für den Vortrag
 
-1. **Charts erklären, nicht vorlesen.** Bei Folie 3, 4 und 5 zuerst sagen, was man sieht („zwei Linien, beide steigen"), dann was es bedeutet. Nie die Zahlen einzeln aufzählen.
-2. **Die Risiken nicht abschwächen.** Ein Käufer, der Folie 10 und 11 selbst entdeckt, verliert das Vertrauen in alles davor. Wer sie selbst vorträgt, gewinnt es.
-3. **Bei Nachfragen zur Bewertung nicht improvisieren.** Auf die offenen Punkte auf Folie 13 verweisen und die Klärung anbieten.
+1. **Charts erklären, nicht vorlesen.** Erst sagen, was man sieht, dann was es bedeutet.
+2. **Risiken nicht abschwächen.** Wer Folie 11 und 12 selbst vorträgt, gewinnt Vertrauen; wer sie den Käufer entdecken lässt, verliert es.
+3. **Bei Bewertungsfragen nicht improvisieren** — auf die offenen Punkte in Folie 14 verweisen.
 
 ---
 
-## Die vier Fragen, die sicher kommen
+## Die vier Fragen, die trotzdem kommen
 
 | Frage | Kurzantwort |
 |---|---|
-| *„Bricht das Geschäft mit der Reform weg?"* | Nein — das Volumen wächst. Was wegfällt, ist der Zugang über den Einzelfall. Im Pinneberger Modell steigt die Zahl der finanzierten Stellen sogar, weil nach Klassen statt nach Bewilligungen bemessen wird. |
-| *„Wie viele Fälle hat SKP heute, wie viele der Markt?"* | SKP-Zahlen aus dem Datenraum. Marktzahlen: SH 119,7 Mio € (2022), Hamburg 4.011 Fälle. **Kreisscharfe Zahlen sind nicht öffentlich** — das offen sagen und als Due-Diligence-Punkt führen. |
-| *„Was, wenn das Bundesgesetz scheitert?"* | Ändert wenig. Die Kreise handeln aus eigener Kompetenz nach § 112 Abs. 4 SGB IX. Das Gesetz beschleunigt, es verursacht nicht. |
-| *„Was kostet die Vergabefähigkeit?"* | Im Wesentlichen eine pädagogische Fachkraftstelle plus Konzeptarbeit, dazu die Haftpflichtaufstockung. Zeitrahmen 12–18 Monate. |
+| *„Bricht das Geschäft weg?"* | Nein — das Volumen wächst. Was wegfällt, ist der Zugang über den Einzelfall. |
+| *„Wie viele Fälle hat SKP, wie viele der Markt?"* | SKP-Zahlen aus dem Datenraum. Markt: SH 119,7 Mio € (2022), Hamburg 4.011 Fälle. Kreisscharfe Zahlen sind **nicht öffentlich** — offen sagen. |
+| *„Was, wenn das Bundesgesetz scheitert?"* | Ändert wenig. Die Kreise handeln nach § 112 Abs. 4 SGB IX aus eigener Kompetenz. |
+| *„Was kostet die Vergabefähigkeit?"* | Eine pädagogische Fachkraftstelle plus Konzeptarbeit und Haftpflichtaufstockung. 12–18 Monate. |
 
 ---
 
 ## Vor dem Termin zu klären
 
-- [ ] Standortliste: Schule, Kreis, Anzahl Kinder, Jahresumsatz, Ansprechpartner in der Schulleitung
-- [ ] Betriebshaftpflicht — Deckungssumme (Pinneberg fordert 10 Mio €)
-- [ ] Anteil Honorarkräfte (in Ausschreibungen ein Ausschlusskriterium)
-- [ ] Laufende Bewilligungsbescheide: einheitliche Befristung auf Schuljahresende?
-- [ ] Umsatz der letzten drei Jahre, getrennt nach Leistungsart Schulbegleitung
+- [ ] Standortliste: Schule, **Schulart**, Kreis, Anzahl Kinder, Jahresumsatz, Ansprechpartner Schulleitung
+- [ ] Betriebshaftpflicht — Deckungssumme (gefordert: 10 Mio €)
+- [ ] Anteil Honorarkräfte (Ausschlusskriterium)
+- [ ] Laufende Bescheide: einheitliche Befristung auf Schuljahresende?
+- [ ] Umsatz drei Jahre, **getrennt** nach Leistungsart Schulbegleitung
+- [ ] Klassenfahrten: Wie werden Sachkosten heute abgerechnet?
 
 ---
 
-*Datengrundlage und Belege: `../research/schulbegleitung-poolreform-analyse.md` und `../research/vergabe-unterlagen-und-quellen.md`.*
+*Belege: `../research/schulbegleitung-poolreform-analyse.md` und `../research/vergabe-unterlagen-und-quellen.md`.*
