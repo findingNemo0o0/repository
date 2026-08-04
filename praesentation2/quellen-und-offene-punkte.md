@@ -15,7 +15,7 @@
 | Kein Abschlusstermin | ebd.: „kann ein Zeitpunkt für den Prozessabschluss nicht genannt werden" |
 | Bosch- und Telekom-Stiftung bewerten die Poolmodelle | ebd. |
 | Testträger Kreis Pinneberg: **Familienräume Karin Struckmeier**, 7 Grundschulen Tornesch-Uetersen, Vertrag 26.06.2018 | Kreis Pinneberg, PM „Neues Modell für Schulbegleitungen wird eingeführt"; familienraeume.de |
-| Ostholstein: 7 Modellschulen, 4 Regionen, seit 2020/21, DISW | DISW-Gesamtevaluation 20.11.2023; Landtag SH Drs. 20/2643(neu) |
+| Ostholstein: 7 Modellschulen seit 11/2020 — **drei Einzelschulen** (Neustädter Bucht, Bad Schwartau, Schönwalde) und die **Modellregion Fehmarn mit vier Schulen** (u. a. Inselschule, Grundschule Burg, Montessori-Schule). **Je Schule ein eigener Pool** | DISW-Gesamtevaluation 20.11.2023, S. 5, 18, 21 f., 72 f.; Landtag SH Drs. 20/2643(neu) |
 | Lübeck seit 2013/14, Flensburg seit 2022/23 flächendeckend | Drs. 20/2643(neu) |
 | Hamburg: Kombinationsmaßnahmen ab 2026/27 | BSFB Hamburg |
 | EU-Ausschreibung „Klassenassistenz" ohne Zuschlag | **TED 246925-2024** (25.04.2024). Eigene TED-Recherche über alle Bekanntmachungen des Kreises Pinneberg mit CPV 85xxx, Stand 04.08.2026: **keine Zuschlagsbekanntmachung** |
@@ -109,8 +109,17 @@ verpflichtende Zusammenarbeit mit Kooperationspartnern), Schutzauftrag nach §§
 3. **SKPs tatsächliche Einsatzgebiete, Fallzahlen und Umsätze.** Kreisscharfe Marktzahlen zur
    Schulbegleitung sind nicht öffentlich; SKP veröffentlicht keine Kennzahlen. Das ist der
    Grund für die Fragenliste auf Folie 3.
-4. **Die Testträger der Ostholsteiner Modellschulen** namentlich — die Pressemitteilung des
-   Kreises war während der Recherche nicht erreichbar (HTTP 503).
+4. **Die Testträger der Ostholsteiner Modellschulen** namentlich. Die Schulen sind inzwischen
+   belegt (siehe Folie 1), die **Leistungserbringer nennt der DISW-Bericht aber bewusst nicht** —
+   er spricht durchgängig nur von „dem Leistungserbringer". Die Pressemitteilung des Kreises
+   Ostholstein bleibt aus dieser Umgebung nicht abrufbar (Verbindungsabbruch, vermutlich
+   Geoblocking). Beim Kreis direkt anfragen.
+
+> **Nachtrag zum Sachstandsbericht (Punkt 1).** Der über `ker-leipzig.de` verlinkte
+> „Sachstandsbericht Schulbegleitung" vom 24.06.2022 stammt vom **Amt für Jugend und Familie
+> der Stadt Leipzig** an deren Jugendhilfeausschuss (506 Fälle, davon 227 an Grundschulen)
+> — er betrifft **Sachsen ohne Poolmodell** und ist nicht der hier gesuchte
+> Sachstandsbericht der Landesregierung Schleswig-Holstein.
 
 ---
 

@@ -299,8 +299,8 @@ timeline = [
                 "Inklusionsquote", OLIVE),
     ("2018", "Kreis Pinneberg startet den Pool mit dem Testträger „Familienräume“ "
              "an 7 Grundschulen in Tornesch-Uetersen", RED),
-    ("2020/21", "Ostholstein: 7 Modellschulen in 4 Regionen, wissenschaftlich "
-                "begleitet vom DISW", AMBER),
+    ("2020/21", "Ostholstein: 7 Modellschulen, u. a. Inselschule Fehmarn und "
+                "Neustädter Bucht. Je Schule ein eigener Pool", AMBER),
     ("2022/23", "Flensburg: alle Grundschulen, keine Einzelanträge mehr", OLIVE),
     ("2024", "EU-Ausschreibung „Klassenassistenz“ — bis heute kein Zuschlag. "
              "Kreistag verschiebt am 11.12.2024 um zwei Jahre", RED),
@@ -346,7 +346,7 @@ card_text(s, COL[2], 6.06, CW, 0.88, C_GRAY, None, [
 
 source(s, "Quellen: Landtag SH Drs. 20/3271 (11.06.2025) und Drs. 20/2643(neu) · Kreis "
           "Pinneberg, Konzept „Klassenassistenz“ und PM zum Vertrag mit Familienräume · "
-          "DISW-Gesamtevaluation Ostholstein 20.11.2023 · TED 246925-2024 · awo-sh.de · "
+          "DISW-Gesamtevaluation Ostholstein 20.11.2023, S. 5 und 21 f. · TED 246925-2024 · awo-sh.de · "
           "lebenshilfe-sh.de · Kartengrundlage GADM/deutschlandGeoJSON.")
 notes(s, "Kernaussage: Es läuft nicht auf „Pool oder nicht“ hinaus, sondern auf Pool plus "
          "multiprofessionelles Team — das sagt die Landesregierung selbst, und einen "
