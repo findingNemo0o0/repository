@@ -23,6 +23,8 @@ GEO = os.path.join(HERE, "kreisgrenzen.geojson")
 BLUE = "#1A70B8"
 AMBER = "#E0861A"
 OLIVE = "#6E7D00"
+VIOLET = "#963A96"
+RED = "#C0392B"
 EMPTY = "#EDEDED"
 EDGE = "#FFFFFF"
 LABEL = "#3D3D3D"
@@ -37,6 +39,12 @@ SKP_BELEGT = ["Pinneberg"]
 SKP_ANGABE = ["Steinburg", "Segeberg", "Ostholstein", "Neumünster Städte",
               "Hamburg Städte"]
 
+FIB_BELEGT = ["Pinneberg", "Hamburg Städte"]
+FIB_ANGABE = []
+
+FR_BELEGT = ["Pinneberg"]
+FR_ANGABE = []
+
 AWO_BELEGT = ["Lauenburg", "Pinneberg", "Lübeck Städte", "Dithmarschen",
               "Kiel Städte", "Rendsburg-Eckernförde", "Neumünster Städte",
               "Plön", "Segeberg"]
@@ -48,9 +56,11 @@ LH_ANGABE = ["Neumünster Städte", "Stormarn", "Lauenburg", "Nordfriesland",
              "Rendsburg-Eckernförde", "Dithmarschen"]
 
 PANELS = [
-    ("SKP", BLUE, SKP_BELEGT, SKP_ANGABE),
-    ("AWO Schleswig-Holstein", AMBER, AWO_BELEGT, AWO_ANGABE),
-    ("Lebenshilfe", OLIVE, LH_BELEGT, LH_ANGABE),
+    ("skp", BLUE, SKP_BELEGT, SKP_ANGABE),
+    ("fib", VIOLET, FIB_BELEGT, FIB_ANGABE),
+    ("familienraeume", RED, FR_BELEGT, FR_ANGABE),
+    ("awo", AMBER, AWO_BELEGT, AWO_ANGABE),
+    ("lebenshilfe", OLIVE, LH_BELEGT, LH_ANGABE),
 ]
 
 
@@ -74,7 +84,7 @@ def main():
         raise SystemExit(f"fehlende Geometrien: {missing}")
 
     for name, color, belegt, angabe in PANELS:
-        fig, ax = plt.subplots(figsize=(2.25, 2.00), dpi=300)
+        fig, ax = plt.subplots(figsize=(1.20, 1.00), dpi=420)
         for kreis in ALL:
             if kreis in belegt:
                 fc, alpha = color, 1.0
@@ -85,13 +95,13 @@ def main():
             for ring in rings(feats[kreis]):
                 ax.add_patch(MplPolygon(ring, closed=True, facecolor=fc,
                                         alpha=alpha, edgecolor=EDGE,
-                                        linewidth=0.5, zorder=2))
+                                        linewidth=0.4, zorder=2))
         ax.set_xlim(7.75, 11.45)
         ax.set_ylim(53.30, 55.10)
         ax.set_aspect(1 / 0.585)          # Breitengrad-Korrektur für ~54° N
         ax.axis("off")
         fig.subplots_adjust(0, 0, 1, 1)
-        out = os.path.join(HERE, f"karte_{name.split()[0].lower()}.png")
+        out = os.path.join(HERE, f"karte_{name}.png")
         fig.savefig(out, transparent=True, bbox_inches="tight", pad_inches=0.01)
         plt.close(fig)
         print("geschrieben:", out)

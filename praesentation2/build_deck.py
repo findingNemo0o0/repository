@@ -264,8 +264,8 @@ set_head(s, "Alle Modelle", "Der Zielzustand: Pool plus multiprofessionelles Tea
 
 # --- Spalte 1: worauf es hinausläuft -----------------------------------------
 colhead(s, COL[0], TOP, "Worauf es hinausläuft")
-card(s, COL[0], 1.88, CW, 1.78, C_BLUE)
-tf = tb(s, COL[0] + PAD, 2.00, CW - 2 * PAD, 1.54)
+card(s, COL[0], 1.88, CW, 1.90, C_BLUE)
+tf = tb(s, COL[0] + PAD, 2.00, CW - 2 * PAD, 1.66)
 run(para(tf, True), "Pool + MPT", 9.5, HF, BLUE, bold=True)
 run(para(tf, before=3, line=1.12),
     "Die Landesregierung nennt die Zusammenführung von Schulischer Assistenz und "
@@ -278,13 +278,13 @@ for it in ["Pool: Budget je Schule statt Bewilligung je Kind",
     run(pp, "▪ ", 8.4, BF, AMBER)
     run(pp, it, 8.4, BF, TXT)
 
-card_text(s, COL[0], 3.82, CW, 0.82, C_AMBER, None, [
+card_text(s, COL[0], 3.94, CW, 0.82, C_AMBER, None, [
     ("Ein Abschlusstermin ist offen: Die Landesregierung kann „einen Zeitpunkt für "
      "den Prozessabschluss nicht nennen“.",
      {"size": 8.4, "color": TXT, "bold": True}),
 ])
 
-card_bullets(s, COL[0], 4.78, CW, 1.34, C_GRAY, "Wer sonst gewinnt", [
+card_bullets(s, COL[0], 4.90, CW, 1.42, C_GRAY, "Wer sonst gewinnt", [
     "Im Kreis Pinneberg holten zuletzt DHB, Lebenshilfe, AWO, inab und die Diakonie "
     "die ausgeschriebenen Sozialleistungen",
     "In NRW gewannen auch gewerbliche Anbieter — GmbH & Co. KG und gGmbH",
@@ -318,43 +318,46 @@ for date, text, c in timeline:
 
 # --- Spalte 3: Einzugsgebiete ------------------------------------------------
 colhead(s, COL[2], TOP, "Einzugsgebiete Schulbegleitung")
+body(s, COL[2], 1.86, CW, 0.24,
+     "Kräftig = öffentlich belegt, blass = Angabe. Drei Anbieter teilen sich einen "
+     "Kreis, zwei Verbände decken das Land ab.", size=7.4, color=MUT)
+
 maps = [
     ("SKP", "karte_skp.png", BLUE,
-     "Nur Kreis Pinneberg belegt — s-k-p.net nennt kein weiteres Gebiet. "
-     "Blass = Angabe des Unternehmens."),
+     "Nur Kreis Pinneberg belegt (s-k-p.net). Blass = Angabe des Unternehmens."),
+    ("FiB — Familien im Blick", "karte_fib.png", RGBColor(0x96, 0x3A, 0x96),
+     "Kreis Pinneberg und Hamburg, Sitz Pinneberg (fib-pinneberg.de)."),
+    ("Familienräume", "karte_familienraeume.png", RED,
+     "Ganzer Kreis Pinneberg, Pilot in Tornesch/Uetersen (familienraeume.de)."),
     ("AWO Schleswig-Holstein", "karte_awo.png", AMBER,
-     "Neun Kreise und kreisfreie Städte — awo-sh.de, Standortliste mit "
-     "Bereichs- und Teamleitungen."),
+     "Neun Kreise und kreisfreie Städte (awo-sh.de, Standortliste)."),
     ("Lebenshilfe", "karte_lebenshilfe.png", OLIVE,
-     "Vier Kreise mit belegter Schulbegleitung — lebenshilfe-sh.de und die "
-     "Angebotsseiten der Kreisverbände."),
+     "Vier Kreise belegt, Kreisverbände fast landesweit (lebenshilfe-sh.de)."),
 ]
-my = 1.86
+my = 2.12
 for name, fn, c, note in maps:
     s.shapes.add_picture(os.path.join(HERE, fn), Inches(COL[2]), Inches(my),
-                         height=Inches(1.28))
-    tfm = tb(s, 10.72, my + 0.06, 1.87, 0.22)
-    run(para(tfm, True), name, 8.6, HF, c, bold=True)
-    body(s, 10.72, my + 0.32, 1.87, 0.86, note, size=7.4, color=MUT)
-    my += 1.40
-
-card_text(s, COL[2], 6.06, CW, 0.88, C_GRAY, None, [
-    ("AWO und Lebenshilfe sind landesweit aufgestellt. Für SKP ist öffentlich ein "
-     "einziger Kreis nachweisbar — das ist die Ausgangslage im Wettbewerb um "
-     "Standortverträge.", {"size": 8.0, "color": TXT}),
-])
+                         height=Inches(0.84))
+    tfm = tb(s, 10.20, my + 0.06, 2.39, 0.20)
+    run(para(tfm, True), name, 8.2, HF, c, bold=True)
+    body(s, 10.20, my + 0.26, 2.39, 0.46, note, size=7.0, color=MUT)
+    my += 0.94
 
 source(s, "Quellen: Landtag SH Drs. 20/3271 (11.06.2025) und Drs. 20/2643(neu) · Kreis "
           "Pinneberg, Konzept „Klassenassistenz“ und PM zum Vertrag mit Familienräume · "
-          "DISW-Gesamtevaluation Ostholstein 20.11.2023, S. 5 und 21 f. · TED 246925-2024 · awo-sh.de · "
-          "lebenshilfe-sh.de · Kartengrundlage GADM/deutschlandGeoJSON.")
+          "DISW-Gesamtevaluation Ostholstein 20.11.2023, S. 5 und 21 f. · TED 246925-2024 · Karten: "
+          "s-k-p.net · fib-pinneberg.de · familienraeume.de · awo-sh.de · lebenshilfe-sh.de · "
+          "Kartengrundlage GADM/deutschlandGeoJSON.")
 notes(s, "Kernaussage: Es läuft nicht auf „Pool oder nicht“ hinaus, sondern auf Pool plus "
          "multiprofessionelles Team — das sagt die Landesregierung selbst, und einen "
          "Endtermin nennt sie nicht. Erprobt wird seit 2013; der Testträger direkt vor der "
          "Haustür heißt Familienräume. Wichtig in der Mitte: Die Pinneberger Ausschreibung "
          "ist seit über zwei Jahren offen, es gibt keinen Zuschlag — das Zeitfenster steht "
          "also noch offen. Rechts die eigentliche Wettbewerbslage: AWO und Lebenshilfe sind "
-         "landesweit aufgestellt, SKP ist öffentlich nur in einem Kreis nachweisbar.")
+         "landesweit aufgestellt. Und die drei kleinen Anbieter — SKP, FiB und Familienräume — "
+         "sitzen alle im selben Kreis Pinneberg, also genau dort, wo die schärfste Reform läuft. "
+         "FiB ist zusätzlich in Hamburg unterwegs. Wer hier einen Standortvertrag verliert, "
+         "verliert ihn an einen Nachbarn von nebenan.")
 
 # =============================================================================
 # FOLIE 2 — Was sich verändert
@@ -372,7 +375,7 @@ card_bullets(s, COL[0], 1.92, CW, 1.62, C_GRAY, "Vorher", [
     "Rund die Hälfte der Schulbegleitungen ist pädagogisch, therapeutisch oder "
     "pflegerisch qualifiziert, die andere Hälfte nicht",
 ], head_color=MUT, marker=MUT)
-card_bullets(s, COL[0], 3.66, CW, 3.00, C_BLUE, "Nachher", [
+card_bullets(s, COL[0], 3.66, CW, 3.18, C_BLUE, "Nachher", [
     "Basiskraft bleibt formal ungelernt: „geeignete sozial erfahrene Kräfte“",
     "Neu und zwingend: Teamleitung ausschließlich Fachkraft, Schlüssel 1:15, "
     "39 Wochenstunden",
@@ -388,7 +391,7 @@ card_bullets(s, COL[1], 1.92, CW, 1.62, C_GRAY, "Vorher", [
     "Klassenfahrten und Ausflüge als Zusatzstunden abrechenbar",
     "Viele kleine Aufträge, kein Vergabeverfahren",
 ], head_color=MUT, marker=MUT)
-card_bullets(s, COL[1], 3.66, CW, 3.00, C_BLUE, "Nachher", [
+card_bullets(s, COL[1], 3.66, CW, 3.18, C_BLUE, "Nachher", [
     "Ein Standortvertrag je Schule, vergeben im EU-Verfahren oder per "
     "Interessenbekundung",
     "Pinneberg: 01.11.2024 bis 31.07.2029, einseitig um vier Jahre verlängerbar — "
@@ -401,19 +404,19 @@ card_bullets(s, COL[1], 3.66, CW, 3.00, C_BLUE, "Nachher", [
 
 # Spalte 3 — Machtverhältnisse
 colhead(s, COL[2], TOP, "Politik und Machtverhältnisse")
-card_bullets(s, COL[2], 1.92, CW, 1.42, C_GRAY, "Dafür", [
+card_bullets(s, COL[2], 1.92, CW, 1.50, C_GRAY, "Dafür", [
     "Landesregierung SH · Grüne: „Wir sind klar für jede Poollösung!“ · CDU-Antrag",
     "SPD in SH drängt auf Tempo, nicht auf Rücknahme",
     "Bund: Referentenentwurf 1. KJHSRG vom 23.03.2026",
     "Kommunale Kostenträger · Bosch- und Telekom-Stiftung",
 ], head_color=OLIVE, marker=OLIVE, size=8.0)
-card_bullets(s, COL[2], 3.46, CW, 1.52, C_AMBER, "Dagegen", [
+card_bullets(s, COL[2], 3.54, CW, 1.60, C_AMBER, "Dagegen", [
     "ver.di (24.04.2026): Fachkräftegebot werde durch einen Kompetenzansatz ersetzt",
     "SPD-Bundestagsabgeordnete: Streichliste „inakzeptabel“ (17.04.2026), über "
     "100.000 Unterschriften dagegen",
     "Lebenshilfe · AGJ · SoVD · Verfassungsblog: nicht verfassungskonform",
 ], head_color=AMBER, marker=AMBER, size=8.0)
-card_bullets(s, COL[2], 5.06, CW, 1.60, C_BLUE, "Wer die Mehrheit hat", [
+card_bullets(s, COL[2], 5.22, CW, 1.62, C_BLUE, "Wer die Mehrheit hat", [
     "Land: CDU und Grüne, 48 von 69 Sitzen. Landtagswahl 2027",
     "Kreis Pinneberg: CDU stärkste Fraktion, 24 von 67. Landrätin Elfi Heesch "
     "(parteilos). Der Kreistag hat verschoben",

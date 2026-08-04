@@ -24,11 +24,22 @@
 
 **Karte.** Kreisgrenzen aus GADM über `deutschlandGeoJSON`, gerendert mit `make_maps.py`.
 Zwei Sättigungsstufen: **kräftig = öffentlich belegt**, **blass = Angabe bzw. Verband vor Ort**.
+Fünf Anbieter im Vergleich:
 
 - **SKP:** belegt nur Kreis Pinneberg (s-k-p.net nennt als Einsatzgebiet ausschließlich
   „Kreis Pinneberg"; Firma ist „SKP – Soziale Kompetenzen Kreis Pinneberg e. K.", Sitz Uetersen).
   Steinburg, Segeberg, Ostholstein, Neumünster und Hamburg sind Angaben des Unternehmens
   und **nicht öffentlich belegt**.
+- **FiB:** „**Familien im Blick.Pinneberg GmbH**", gemeinnützig, Sitz Heinrich-Christiansen-Str. 43,
+  25421 Pinneberg. Laut `fib-pinneberg.de` tätig **im Kreis Pinneberg und in Hamburg** —
+  namentlich Appen, Elmshorn, Moorrege, Pinneberg, Quickborn, Rellingen, Schenefeld,
+  Tangstedt, Tornesch, Uetersen und Wedel. Leistungen: Schulbegleitung und Integrationshilfe,
+  sozialpädagogische Familienhilfe, Diabetesassistenz, Arbeitsassistenz. Nur ein Standort,
+  keine Zweigbüros.
+- **Familienräume:** „**Familienräume K. Struckmeier GmbH**", Sitz Pinneberg. Laut
+  `familienraeume.de` im **gesamten Kreis Pinneberg** tätig; im Poolmodell der Region
+  **Tornesch/Uetersen** ist sie der ausführende Leistungserbringer (Vertrag mit dem Kreis
+  vom 26.06.2018).
 - **AWO SH:** Quelle ist die Standortliste auf `awo-sh.de/schulische-unterstuetzungsangebote/schulbegleitung`.
   Sie nennt namentlich Bereichs-, Einrichtungs- und Teamleitungen für: Herzogtum Lauenburg
   Nord und Süd (Jahan Mortezai), Kreis Pinneberg (Anna Kindler), Lübeck (Julia Spiegel),
@@ -42,6 +53,13 @@ Zwei Sättigungsstufen: **kräftig = öffentlich belegt**, **blass = Angabe bzw.
 
 > Der Hinweis „von Fehmarn bis Hamburg", der in Jobbörsen neben SKP auftaucht, gehört zu
 > einer Anzeige des **Malteser Hilfsdienstes** — nicht zu SKP.
+
+> 🔑 **Das Bild, das die fünf Karten ergeben:** SKP, FiB und Familienräume sitzen alle im
+> **Kreis Pinneberg** — also genau dort, wo mit der „Klassenassistenz" die schärfste Reform
+> Schleswig-Holsteins vorbereitet wird. FiB ist zusätzlich in Hamburg tätig, wo seit 2026/27
+> die Kombinationsmaßnahmen laufen. Beide Heimatmärkte stellen also gleichzeitig um. AWO und
+> Lebenshilfe sind dagegen landesweit aufgestellt und können den Verlust eines Standorts
+> anderswo ausgleichen.
 
 ### Folie 2 — Was sich verändert
 
