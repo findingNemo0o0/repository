@@ -16,6 +16,9 @@ auf Poolversorgung und deren Auswirkungen auf SKP (Uetersen).
 - [`praesentation/`](praesentation/) — Marktanalyse als Präsentation für einen potenziellen
   Käufer (8 Folien), erzeugt mit `build_deck.py` auf Basis des Haus-Designs
   (`skp-design-template.pptx`), plus `vorstellplan.md` als Vortragsleitfaden.
+- [`praesentation2/`](praesentation2/) — Vier-Folien-Deck zu Modellen, Veränderungen,
+  Fragenliste und Financial Model, inklusive Karten der Einzugsgebiete; Belege in
+  `quellen-und-offene-punkte.md`.
 
 ## Betrachtete Regionen
 
