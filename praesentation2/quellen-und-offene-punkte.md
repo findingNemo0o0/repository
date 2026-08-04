@@ -29,10 +29,16 @@ Zwei Sättigungsstufen: **kräftig = öffentlich belegt**, **blass = Angabe bzw.
   „Kreis Pinneberg"; Firma ist „SKP – Soziale Kompetenzen Kreis Pinneberg e. K.", Sitz Uetersen).
   Steinburg, Segeberg, Ostholstein, Neumünster und Hamburg sind Angaben des Unternehmens
   und **nicht öffentlich belegt**.
-- **AWO SH:** Herzogtum Lauenburg, Pinneberg, Lübeck, Dithmarschen sowie die Region Mitte
-  (Kiel, Rendsburg-Eckernförde, Neumünster, Plön, Segeberg) — awo-sh.de mit Bereichsleitungen.
-- **Lebenshilfe:** Schulbegleitung belegt für Steinburg, Bad Segeberg, Ostholstein und
-  Pinneberg; Mitgliedsorganisationen fast landesweit (lebenshilfe-sh.de).
+- **AWO SH:** Quelle ist die Standortliste auf `awo-sh.de/schulische-unterstuetzungsangebote/schulbegleitung`.
+  Sie nennt namentlich Bereichs-, Einrichtungs- und Teamleitungen für: Herzogtum Lauenburg
+  Nord und Süd (Jahan Mortezai), Kreis Pinneberg (Anna Kindler), Lübeck (Julia Spiegel),
+  Heide/Dithmarschen (Stefan Frahm) sowie Kiel, Rendsburg-Eckernförde, Neumünster, Plön und
+  Bad Segeberg (Susanne Friederich) — zusammen neun Kreise und kreisfreie Städte.
+- **Lebenshilfe:** eigene Schulbegleitungs-Angebotsseiten der Kreisverbände Steinburg
+  (`lebenshilfe-steinburg.de`), Bad Segeberg (`lebenshilfe-segeberg.de`), Ostholstein
+  (Bad Schwartau) und Pinneberg (`lebenshilfe-pi.de`, Elmshorn). Die Mitgliederliste des
+  Landesverbands (`lebenshilfe-sh.de/verband/mitglieder-lhsh`) zeigt Kreisverbände fast
+  landesweit — dort ist die Schulbegleitung aber nicht einzeln geprüft, daher blass.
 
 > Der Hinweis „von Fehmarn bis Hamburg", der in Jobbörsen neben SKP auftaucht, gehört zu
 > einer Anzeige des **Malteser Hilfsdienstes** — nicht zu SKP.
@@ -49,6 +55,11 @@ Zwei Sättigungsstufen: **kräftig = öffentlich belegt**, **blass = Angabe bzw.
 | Kein Tarifausgleich | Konzept, Kap. 6: „Anpassungen durch Tarifsteigerungen … erfolgen im Rahmen der Vertragslaufzeit nicht" |
 | Grüne: „Wir sind klar für jede Poollösung!" | Malte Krüger, Landtag SH, Presseticker 28.02.2025 |
 | CDU-Antrag „systemisch weiterentwickeln" | CDU-Landtagsfraktion SH, TOP 27+40 |
+| **SPD in SH drängt auf Tempo, nicht auf Rücknahme** | Drs. 20/3271, Frage 3 stammt von Martin Habersaat (SPD): „**Zu wann** beabsichtigt die Landesregierung … Schulassistenz und Schulbegleitung zu Poollösungen zusammenzuführen?" |
+| **SPD im Bund gegen die Streichliste** | Die SPD-Bundestagsabgeordneten Jasmina Hostert, Annika Klose und Heike Heubach nannten die Streichliste am **17.04.2026** „inakzeptabel" — „Wer bei Teilhabe und Jugendhilfe spart, spart am falschen Ende". Über 100.000 Unterschriften unter der Bundestagspetition dagegen |
+| Land: CDU und Grüne, 48 von 69 Sitzen | Landtag SH, 20. Wahlperiode: CDU 34, Grüne 14; Opposition SPD 12, FDP 5, SSW 4. MP Daniel Günther (CDU), Bildungsministerin Dr. Dorit Stenke (CDU) seit Mai 2025. Nächste Wahl spätestens 18.04.2027 |
+| Kreis Pinneberg: CDU stärkste Fraktion, 24 von 67 | Kreistagswahl 14.05.2023, CDU 35,7 %. Kreispräsident Helmuth Ahrens (CDU); Landrätin **Elfi Heesch (parteilos)**, seit 01.01.2021 vom Kreistag gewählt |
+| Bund: Entwurf aus dem Haus von Karin Prien | Prien (CDU) war 2017–2025 Bildungsministerin in SH und leitet seit 07.05.2025 das BMBFSFJ, das den Referentenentwurf vorgelegt hat |
 | ver.di-Kritik: Fachkräftegebot → Kompetenzansatz | ver.di, „Exklusion statt Inklusion", 24.04.2026 |
 | Lebenshilfe Bundesverband, AGJ, SoVD, Verfassungsblog | Stellungnahmen 04/2026; Wrase, Verfassungsblog 28.05.2026 |
 | OVG Schleswig weist Klage von vier Trägern ab | **5 MB 7/24**, Beschluss 03.09.2024, unanfechtbar |
@@ -66,15 +77,24 @@ verpflichtende Zusammenarbeit mit Kooperationspartnern), Schutzauftrag nach §§
 | Größe | Wert | Quelle |
 |---|---|---|
 | Mindestlohn 2026 / 2027 | 13,90 € / 14,60 € | Mindestlohnkommission, BMAS |
-| TVöD SuE **S2 Stufe 5** | 3.997,10 €/Monat | Tabelle gültig 01.05.2026–31.03.2027 (VKA) |
-| TVöD SuE **S3 Stufe 5** | 4.506,62 €/Monat | ebd. |
-| Umrechnung auf Stundensatz | ÷ 169,6 h (39 Wochenstunden × 4,348) | **eigene Rechnung** → 23,57 € bzw. 26,57 € |
-| Schulbegleitungen SH | 2.700 (2014) → rund 7.000 (2022) | Rede der Ministerin, Landtag SH, 28.02.2025 |
+| TVöD SuE **S2 Stufe 5** | 3.330,92 €/Monat | Tabelle gültig 01.05.2026–31.03.2027 (VKA), gegengeprüft an zwei Quellen |
+| TVöD SuE **S3 Stufe 5** | 3.755,52 €/Monat | ebd. |
+| Umrechnung auf Stundensatz | ÷ 169,6 h (39 Wochenstunden × 4,348) | **eigene Rechnung** → 19,64 € bzw. 22,15 €; Abstand zum Mindestlohn 2026 rund **+41 %** |
+| Schulbegleitungen SH | 2.700 (2014) → rund 7.000 (2022), rund **126 Mio. €** Kreisausgaben | Rede der Ministerin, Landtag SH, 28.02.2025 |
+| Schulbegleitungen Hamburg | 1.574 (2014/15) → **4.011 (2025/26)**, 6,75 → **42,15 Mio. €** | BSFB Hamburg, PM **26.06.2026** — die aktuellste öffentlich vorliegende Reihe |
+| Eingliederungshilfe bundesweit | 2024: **324.570 Kinder unter 18** (31,5 % aller Leistungsberechtigten), Ausgaben **+12,9 % auf 28,7 Mrd. €** | Destatis, Eingliederungshilfe nach SGB IX, Berichtsjahr 2024 |
 | Vergütungsformel | S2/5 + 10 % Sachkosten + 5 % Verwaltungskostenzuschlag | Konzept, Kap. 6 |
 | Personalschlüssel | 1 Klassenassistenz je Klasse, 24 h (Kl. 1–2) / 30 h (Kl. 3–4), Teamleitung 1:15 | ebd. |
 
-> Der Stundensatz enthält **keine** Arbeitgeberanteile und keine SuE-Zulage (130 €/Monat).
-> Beides erhöht die tatsächlichen Personalkosten weiter.
+> **TVöD SuE** = Tarifvertrag für den öffentlichen Dienst, Sparte **S**ozial- **u**nd
+> **E**rziehungsdienst (kommunale Arbeitgeber, VKA). **S2** ist die unterste Entgeltgruppe
+> für Helfertätigkeiten in Erziehung, Pflege und Betreuung; die **Stufe** steht für
+> Berufserfahrung. Der Stundensatz enthält **keine** Arbeitgeberanteile und keine SuE-Zulage —
+> beides erhöht die tatsächlichen Personalkosten weiter.
+
+> ⚠️ **Korrektur gegenüber der ersten Fassung:** Dort standen 3.997,10 € (S2/5) und
+> 4.506,62 € (S3/5) und daraus abgeleitet ein Abstand von 70 % zum Mindestlohn. Die Werte
+> waren falsch. Richtig sind 3.330,92 € und 3.755,52 €, der Abstand beträgt rund **41 %**.
 
 ---
 
