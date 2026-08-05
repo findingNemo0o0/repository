@@ -36,8 +36,9 @@ ALL = ["Dithmarschen", "Flensburg Städte", "Kiel Städte", "Lauenburg",
        "Segeberg", "Steinburg", "Stormarn", "Hamburg Städte"]
 
 SKP_BELEGT = ["Pinneberg"]
-SKP_ANGABE = ["Steinburg", "Segeberg", "Ostholstein", "Neumünster Städte",
-              "Hamburg Städte"]
+# Bewusst leer: Fuer weitere Einsatzgebiete gibt es keine oeffentliche Quelle.
+# s-k-p.net nennt ausschliesslich den Kreis Pinneberg.
+SKP_ANGABE = []
 
 FIB_BELEGT = ["Pinneberg", "Hamburg Städte"]
 FIB_ANGABE = []

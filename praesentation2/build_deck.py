@@ -319,12 +319,13 @@ for date, text, c in timeline:
 # --- Spalte 3: Einzugsgebiete ------------------------------------------------
 colhead(s, COL[2], TOP, "Einzugsgebiete Schulbegleitung")
 body(s, COL[2], 1.86, CW, 0.24,
-     "Kräftig = öffentlich belegt, blass = Angabe. Drei Anbieter teilen sich einen "
+     "Kräftig = öffentlich belegte Schulbegleitung. Drei Anbieter teilen sich einen "
      "Kreis, zwei Verbände decken das Land ab.", size=7.4, color=MUT)
 
 maps = [
     ("SKP", "karte_skp.png", BLUE,
-     "Nur Kreis Pinneberg belegt (s-k-p.net). Blass = Angabe des Unternehmens."),
+     "Nur Kreis Pinneberg — s-k-p.net nennt kein weiteres Gebiet. Weitere Regionen "
+     "wären im Datenraum zu belegen."),
     ("FiB — Familien im Blick", "karte_fib.png", RGBColor(0x96, 0x3A, 0x96),
      "Kreis Pinneberg und Hamburg, Sitz Pinneberg (fib-pinneberg.de)."),
     ("Familienräume", "karte_familienraeume.png", RED,
@@ -332,7 +333,8 @@ maps = [
     ("AWO Schleswig-Holstein", "karte_awo.png", AMBER,
      "Neun Kreise und kreisfreie Städte (awo-sh.de, Standortliste)."),
     ("Lebenshilfe", "karte_lebenshilfe.png", OLIVE,
-     "Vier Kreise belegt, Kreisverbände fast landesweit (lebenshilfe-sh.de)."),
+     "Vier Kreise belegt. Blass: Kreisverband vor Ort, Schulbegleitung dort nicht "
+     "einzeln geprüft (lebenshilfe-sh.de)."),
 ]
 my = 2.12
 for name, fn, c, note in maps:
@@ -354,7 +356,10 @@ notes(s, "Kernaussage: Es läuft nicht auf „Pool oder nicht“ hinaus, sondern
          "Haustür heißt Familienräume. Wichtig in der Mitte: Die Pinneberger Ausschreibung "
          "ist seit über zwei Jahren offen, es gibt keinen Zuschlag — das Zeitfenster steht "
          "also noch offen. Rechts die eigentliche Wettbewerbslage: AWO und Lebenshilfe sind "
-         "landesweit aufgestellt. Und die drei kleinen Anbieter — SKP, FiB und Familienräume — "
+         "landesweit aufgestellt. Wichtig zur Karte: Bei SKP ist nur der Kreis Pinneberg "
+         "eingefärbt, weil es für kein weiteres Gebiet eine öffentliche Quelle gibt — das ist "
+         "eine Frage an das Management, keine Aussage über den tatsächlichen Umfang. Die drei "
+         "kleinen Anbieter — SKP, FiB und Familienräume — "
          "sitzen alle im selben Kreis Pinneberg, also genau dort, wo die schärfste Reform läuft. "
          "FiB ist zusätzlich in Hamburg unterwegs. Wer hier einen Standortvertrag verliert, "
          "verliert ihn an einen Nachbarn von nebenan.")
@@ -493,9 +498,9 @@ for i, (head, fill, hc, q, why, ask) in enumerate(questions):
     run(para(tf, before=5, line=1.12), ask, 8.0, BF, hc, italic=True)
 
 card_text(s, COL[2], 4.05, CW, 2.00, C_GRAY, "Was wir selbst nicht beantworten können", [
-    ("Kreisscharfe Marktzahlen zur Schulbegleitung sind nicht öffentlich. Auch SKPs "
-     "eigene Website nennt als Einsatzgebiet nur den Kreis Pinneberg — jede weitere "
-     "Region ist Angabe des Unternehmens.", {"size": 8.4}),
+    ("Kreisscharfe Marktzahlen zur Schulbegleitung sind nicht öffentlich. SKPs eigene "
+     "Website nennt als Einsatzgebiet ausschließlich den Kreis Pinneberg — für jede "
+     "weitere Region fehlt bislang jeder Beleg.", {"size": 8.4}),
     ("Diese fünf Antworten entscheiden, ob SKP im Poolmarkt überhaupt antreten kann.",
      {"size": 8.4, "bold": True, "color": RED}),
 ])

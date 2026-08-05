@@ -26,10 +26,17 @@
 Zwei Sättigungsstufen: **kräftig = öffentlich belegt**, **blass = Angabe bzw. Verband vor Ort**.
 Fünf Anbieter im Vergleich:
 
-- **SKP:** belegt nur Kreis Pinneberg (s-k-p.net nennt als Einsatzgebiet ausschließlich
-  „Kreis Pinneberg"; Firma ist „SKP – Soziale Kompetenzen Kreis Pinneberg e. K.", Sitz Uetersen).
-  Steinburg, Segeberg, Ostholstein, Neumünster und Hamburg sind Angaben des Unternehmens
-  und **nicht öffentlich belegt**.
+- **SKP:** **nur Kreis Pinneberg.** `s-k-p.net` nennt als Einsatzgebiet ausschließlich
+  „Kreis Pinneberg"; die Firma heißt „SKP – Soziale Kompetenzen Kreis Pinneberg e. K.",
+  Sitz Uetersen.
+
+  > ⚠️ **Korrektur.** In den ersten Fassungen der Karte waren zusätzlich Steinburg, Segeberg,
+  > Ostholstein, Neumünster und Hamburg blass eingefärbt und als „Angabe des Unternehmens"
+  > beschriftet. Diese fünf Kreise stammten aus der **Aufgabenstellung zu Beginn dieses
+  > Projekts**, nicht aus einer Quelle, auf die man in einer Due Diligence verweisen kann —
+  > SKP selbst nennt sie nirgends. Sie sind aus der Karte entfernt. Ob SKP tatsächlich über
+  > den Kreis Pinneberg hinaus tätig ist, ist über die Standortliste aus dem Datenraum zu
+  > klären (Frage 5 auf Folie 3).
 - **FiB:** „**Familien im Blick.Pinneberg GmbH**", gemeinnützig, Sitz Heinrich-Christiansen-Str. 43,
   25421 Pinneberg. Laut `fib-pinneberg.de` tätig **im Kreis Pinneberg und in Hamburg** —
   namentlich Appen, Elmshorn, Moorrege, Pinneberg, Quickborn, Rellingen, Schenefeld,
@@ -45,7 +52,9 @@ Fünf Anbieter im Vergleich:
   Nord und Süd (Jahan Mortezai), Kreis Pinneberg (Anna Kindler), Lübeck (Julia Spiegel),
   Heide/Dithmarschen (Stefan Frahm) sowie Kiel, Rendsburg-Eckernförde, Neumünster, Plön und
   Bad Segeberg (Susanne Friederich) — zusammen neun Kreise und kreisfreie Städte.
-- **Lebenshilfe:** eigene Schulbegleitungs-Angebotsseiten der Kreisverbände Steinburg
+- **Lebenshilfe:** blass eingefärbt sind hier — und nur hier — Kreise, in denen ein
+  Kreisverband existiert, für die die Schulbegleitung aber nicht einzeln geprüft ist.
+  Belegt sind die eigenen Schulbegleitungs-Angebotsseiten der Kreisverbände Steinburg
   (`lebenshilfe-steinburg.de`), Bad Segeberg (`lebenshilfe-segeberg.de`), Ostholstein
   (Bad Schwartau) und Pinneberg (`lebenshilfe-pi.de`, Elmshorn). Die Mitgliederliste des
   Landesverbands (`lebenshilfe-sh.de/verband/mitglieder-lhsh`) zeigt Kreisverbände fast
@@ -125,8 +134,9 @@ verpflichtende Zusammenarbeit mit Kooperationspartnern), Schutzauftrag nach §§
    Zuschlagsbekanntmachung. Ob aufgehoben, ausgesetzt oder ruhend, muss beim Kreis erfragt
    werden (klassenassistenz@kreis-pinneberg.de).
 3. **SKPs tatsächliche Einsatzgebiete, Fallzahlen und Umsätze.** Kreisscharfe Marktzahlen zur
-   Schulbegleitung sind nicht öffentlich; SKP veröffentlicht keine Kennzahlen. Das ist der
-   Grund für die Fragenliste auf Folie 3.
+   Schulbegleitung sind nicht öffentlich; SKP veröffentlicht keine Kennzahlen. Öffentlich
+   belegbar ist ausschließlich der Kreis Pinneberg. Das ist der Grund für die Fragenliste auf
+   Folie 3 — insbesondere Frage 5 (Standortliste je Schule).
 4. **Die Testträger der Ostholsteiner Modellschulen** namentlich. Die Schulen sind inzwischen
    belegt (siehe Folie 1), die **Leistungserbringer nennt der DISW-Bericht aber bewusst nicht** —
    er spricht durchgängig nur von „dem Leistungserbringer". Die Pressemitteilung des Kreises
