@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Baut den 14-Folien-Leitfaden 'Kauf insolventer Pflegedienste' in das
+"""Baut den Leitfaden 'Kauf insolventer Pflegedienste' (13 Folien) in das
 Corporate-Template InsolvenzProzess.pptx (Master/Logo/Theme bleiben erhalten)."""
 from pptx import Presentation
 from pptx.util import Inches, Pt
@@ -8,12 +8,11 @@ from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 
 SRC = "InsolvenzProzess.pptx"
-OUT = "InsolvenzProzess.pptx"  # in place -> Ergebnisdatei
+OUT = "InsolvenzProzess.pptx"
 
 # ---- Markenpalette (aus Theme) ----
-BLUE="1A70B8"; LIME="BBCF00"; GREEN="2A6A38"; ORANGE="F89929"; PURPLE="963A96"; RED="D73225"
+BLUE="1A70B8"; LIME="BBCF00"; GREEN="2A6A38"; ORANGE="F89929"; TEAL="0F8A8A"; RED="D73225"
 GREY="777777"; WHITE="FFFFFF"; DARK="333333"
-# Varianten/Tints (Designregel erlaubt Varianten für lesbaren Kontrast)
 BLUETINT="EAF2F9"; GREYTINT="F1F4F6"; ORANGETINT="FDEFD9"; REDTINT="FBEAE7"; GREENTINT="E9F1EA"
 BORDER="D8DEE2"; BLUEDK="14547F"
 HFONT="Quicksand"; BFONT="Open Sans"
@@ -26,7 +25,6 @@ m1=prs.slide_masters[1]; m2=prs.slide_masters[2]
 def lay(master,name): return next(L for L in master.slide_layouts if L.name==name)
 L_TITLE=lay(m1,"Titel/Trenner-1")
 L_CONTENT=lay(m1,"Inhalt-1")
-L_END=lay(m2,"Endfolie-Logo")
 
 # ---- vorhandene (leere) Folien entfernen (inkl. Parts/Rels) ----
 from pptx.oxml.ns import qn
@@ -43,8 +41,7 @@ def A(v): return Inches(v)
 ALIGN={'l':PP_ALIGN.LEFT,'c':PP_ALIGN.CENTER,'r':PP_ALIGN.RIGHT}
 ANCH={'t':MSO_ANCHOR.TOP,'m':MSO_ANCHOR.MIDDLE,'b':MSO_ANCHOR.BOTTOM}
 
-def add_slide(layout):
-    return prs.slides.add_slide(layout)
+def add_slide(layout): return prs.slides.add_slide(layout)
 
 def shape(sl,kind,x,y,w,h,fill=None,line=None,lw=1.0,radius=0.10):
     sp=sl.shapes.add_shape(kind,A(x),A(y),A(w),A(h))
@@ -85,21 +82,10 @@ def label(sl,shp,text,size,color,font=BFONT,bold=True,anchor='m',align='c'):
 def para(text,size=12,color=DARK,font=BFONT,bold=False,italic=False,a='l',ls=None,sa=None,sb=None):
     return {'a':a,'ls':ls,'sa':sa,'sb':sb,'r':[{'t':text,'s':size,'c':color,'f':font,'b':bold,'i':italic}]}
 
-def set_ph(sl,idx,text,size=None,color=None,bold=None):
+def set_ph(sl,idx,text):
     for ph in sl.placeholders:
         if ph.placeholder_format.idx==idx:
-            ph.text_frame.word_wrap=True
-            r=ph.text_frame.paragraphs[0].runs
-            ph.text_frame.paragraphs[0].text=text if False else ph.text_frame.paragraphs[0].text
-            # set text preserving inherited style
-            ph.text=text
-            if size or color or bold is not None:
-                for p in ph.text_frame.paragraphs:
-                    for rn in p.runs:
-                        if size: rn.font.size=Pt(size)
-                        if color: rn.font.color.rgb=rgb(color)
-                        if bold is not None: rn.font.bold=bold
-            return ph
+            ph.text=text; return ph
     return None
 
 def del_ph(sl,idxs):
@@ -109,8 +95,8 @@ def del_ph(sl,idxs):
 
 def content_slide(title,eyebrow=None):
     sl=add_slide(L_CONTENT)
-    del_ph(sl,[1,12])        # OBJECT + BODY weg -> freie Fläche
-    set_ph(sl,0,title)       # TITLE (Quicksand, Markenfarbe)
+    del_ph(sl,[1,12])
+    set_ph(sl,0,title)
     return sl
 
 def icon_circle(sl,x,y,d,fill,text,size,tcolor=WHITE):
@@ -120,23 +106,22 @@ def icon_circle(sl,x,y,d,fill,text,size,tcolor=WHITE):
 RR=MSO_SHAPE.ROUNDED_RECTANGLE; RECT=MSO_SHAPE.RECTANGLE; OV=MSO_SHAPE.OVAL; DIA=MSO_SHAPE.DIAMOND
 
 # =====================================================================
-# 1 — TITEL (Titel/Trenner-Layout)
+# 1 — TITEL
 # =====================================================================
 s=add_slide(L_TITLE)
 set_ph(s,0,"Kauf eines insolventen Pflegedienstes")
-del_ph(s,[1,10])   # leere Namens-/Datumsplatzhalter entfernen
-# Titelfolie: Zusatztexte als Boxen (klar positioniert)
+del_ph(s,[1,10])
 box(s,0.71,5.15,11.6,0.5,[para("Prozess, Zeitplan & Achievement-Gates — Fokus außerklinische Intensivpflege (AKI, § 132l SGB V)",14,GREY,BFONT)])
 box(s,0.71,2.95,11.0,0.7,[para("M&A-LEITFADEN · DISTRESSED HEALTHCARE",13,BLUE,HFONT,bold=True)])
 
 # =====================================================================
 # 2 — MANAGEMENT SUMMARY
 # =====================================================================
-s=content_slide("Warum insolvente AKI-Targets attraktiv sind","Management Summary")
-items=[("1","Konsolidierungswelle läuft","Demografie, Personalmangel & IPReG treffen kleine Träger überproportional — 2024–2027 gilt als aktivstes Fenster.",BLUE),
-       ("2","Massive Bewertungsrabatte","Distressed-Preise liegen weit unter regulären EBITDA-Multiples; dokumentiert bis ~90 % Wertverlust.",GREEN),
+s=content_slide("Warum insolvente AKI-Targets attraktiv sind")
+items=[("1","Konsolidierungswelle läuft","Demografie, Personalmangel & IPReG treffen kleine Träger überproportional — 2024–2027 aktivstes Fenster.",BLUE),
+       ("2","Massive Bewertungsrabatte","Distressed-Preise weit unter regulären EBITDA-Multiples; dokumentiert bis ~90 % Wertverlust.",GREEN),
        ("3","Zwei klare Hebel","In der Pflege sind Mitarbeiter und Patienten die entscheidenden — oft die einzigen — Werttreiber.",ORANGE),
-       ("4","Buy-and-Build-Fit","Zukauf statt Neugründung: Patienten, Personal und (idealerweise) Versorgungsverträge statt Aufbau bei null.",PURPLE)]
+       ("4","Buy-and-Build-Fit","Zukauf statt Neugründung: Patienten, Personal und (idealerweise) Versorgungsverträge statt Aufbau bei null.",TEAL)]
 y=CT
 for n,h,t,c in items:
     shape(s,RR,LEFT,y,6.35,1.05,fill=WHITE,line=BORDER,lw=1,radius=0.10)
@@ -144,7 +129,6 @@ for n,h,t,c in items:
     box(s,LEFT+0.95,y+0.13,5.25,0.35,[para(h,13.5,c,HFONT,bold=True)])
     box(s,LEFT+0.95,y+0.5,5.3,0.5,[para(t,10.5,DARK,BFONT,ls=12.5)])
     y+=1.15
-# rechtes Panel (Blau)
 px=8.35
 shape(s,RR,px,CT,4.19,4.6,fill=BLUE,radius=0.06)
 box(s,px+0.3,CT+0.25,3.6,0.3,[para("KERNAUSSAGE",11,LIME,HFONT,bold=True)])
@@ -161,7 +145,7 @@ for n,l in stats:
 # =====================================================================
 # 3 — ZWEI WELTEN (Vergleich)
 # =====================================================================
-s=content_slide("Zwei Welten: normaler M&A vs. Distressed","Grundverständnis")
+s=content_slide("Zwei Welten: normaler M&A vs. Distressed")
 c0x,c1x,c2x=LEFT,LEFT+2.35,LEFT+6.6
 w0,w1,w2=2.25,4.15,4.3
 shape(s,RR,c1x,CT,w1,0.45,fill=BLUE,radius=0.12); label(s,s.shapes[-1],"Normaler M&A",13,WHITE,HFONT,anchor='m')
@@ -185,10 +169,10 @@ box(s,LEFT,y+0.12,CW,0.4,[para("Kernunterschied: Kauf unter Zeitdruck, ohne Gara
 # =====================================================================
 # 4 — VERFAHRENSKUNDE (3 Karten)
 # =====================================================================
-s=content_slide("Wer ist mein Gegenüber? Drei Verfahrensarten","Verfahrenskunde")
+s=content_slide("Wer ist mein Gegenüber? Drei Verfahrensarten")
 cards=[("Regelinsolvenz",BLUE,"Insolvenzverwalter",
         ["Schuldner verliert Verfügungsgewalt","Verwalter führt & verkauft die Masse","Neutral — aber kaum Gewährleistung"],"Partner: der Verwalter"),
-       ("Eigenverwaltung",PURPLE,"Management + Sachwalter",
+       ("Eigenverwaltung",TEAL,"Management + Sachwalter",
         ["Geschäftsführung bleibt (§ 270 InsO)","Sachwalter überwacht nur","Dieselben Leute wie in der Krise"],"Erhöhte Täuschungsgefahr"),
        ("Schutzschirm",GREEN,"Mgmt + vorl. Sachwalter",
         ["Sonderform vorläufige Eigenverwaltung","Nur bei drohender Insolvenz","Voraussetzung: Sanierungsfähigkeit"],"Frühe Krise, § 270b InsO")]
@@ -212,14 +196,14 @@ for t,c,who,pts,tag in cards:
 # =====================================================================
 # 5 — ZWEI KAUFSTRUKTUREN + TWIST
 # =====================================================================
-s=content_slide("Zwei Kaufstrukturen — der Pflege-Twist entscheidet","Deal-Architektur")
-def deal_card(x,letter,lcolor,title,sub,rows):
+s=content_slide("Zwei Kaufstrukturen — der Pflege-Twist entscheidet")
+def deal_card(x,letter,lcolor,title,sub,rws):
     shape(s,RR,x,CT,5.35,2.55,fill=WHITE,line=BORDER,lw=1,radius=0.05)
     icon_circle(s,x+0.22,CT+0.2,0.55,lcolor,letter,18)
     box(s,x+0.95,CT+0.18,4.2,0.38,[para(title,16,BLUE,HFONT,bold=True)])
     box(s,x+0.95,CT+0.56,4.2,0.28,[para(sub,10.5,GREY,BFONT,italic=True)])
     yy=CT+1.0
-    for sign,txt in rows:
+    for sign,txt in rws:
         col=GREEN if sign=="+" else RED
         c=shape(s,OV,x+0.25,yy+0.02,0.24,0.24,fill=col); label(s,c,sign,12,WHITE,BFONT,anchor='m')
         box(s,x+0.6,yy-0.02,4.6,0.34,[para(txt,11.5,DARK,BFONT)],anchor='m')
@@ -227,10 +211,9 @@ def deal_card(x,letter,lcolor,title,sub,rows):
 deal_card(LEFT,"A",BLUE,"Asset Deal","„Übertragende Sanierung“ — Normalfall",
           [("+","Keine Haftung für Altverbindlichkeiten"),("+","Keine Alt-Personalkosten vor Eröffnung"),
            ("−","Verträge gehen NICHT über (außer § 613a)"),("−","Jeder Kassen-/Lieferantenvertrag neu")])
-deal_card(LEFT+5.63,"B",PURPLE,"Share Deal via Insolvenzplan","Rechtsträger überlebt entschuldet",
+deal_card(LEFT+5.63,"B",BLUEDK,"Share Deal via Insolvenzplan","Rechtsträger überlebt entschuldet",
           [("+","Versorgungsverträge & Zulassungen bleiben"),("+","Kein Abrechnungsbruch, Verordnungen bestehen"),
            ("−","Mehr latente Haftung wird mitgekauft"),("−","Komplexer: Gläubigermehrheiten nötig")])
-# Twist-Banner
 ty=CT+2.75
 shape(s,RR,LEFT,ty,CW,1.6,fill=BLUE,radius=0.05)
 shape(s,RR,LEFT,ty,2.0,1.6,fill=ORANGE,radius=0.05); shape(s,RECT,LEFT+1.5,ty,0.5,1.6,fill=ORANGE)
@@ -240,161 +223,165 @@ box(s,LEFT+2.25,ty+0.16,CW-2.4,1.3,[
     para("Im Asset Deal geht er NICHT automatisch über → drohende Abrechnungslücke. Betreiberwechsel vorab mit den Kassen klären; in der Intensivpflege ist der Insolvenzplan deshalb oft überlegen.",11.5,"E9F1F8",BFONT,ls=14)],anchor='m')
 
 # =====================================================================
-# 6 — PROZESS-ZEITSTRAHL + GATES (Hero)
+# 6 — DER PROZESS (Zeitstrahl, zusammengeführt aus alt 6–8)
 # =====================================================================
-s=content_slide("Insolvenz-Verfahrensachse über M&A-Phasen 0–6","Der Prozess auf einen Blick")
-# Insolvenz-Lane
-box(s,LEFT,CT-0.02,6,0.28,[para("INSOLVENZ-VERFAHREN",11,BLUE,HFONT,bold=True)])
+s=content_slide("Der Prozess: Insolvenz-Achse × M&A-Phasen 0–6")
 scale=CW/12.33
-def sx(v): return LEFT + v*scale
+def sx(v): return LEFT+v*scale
+box(s,LEFT,1.66,6,0.22,[para("INSOLVENZ-VERFAHREN",10,BLUE,HFONT,bold=True)])
 ins=[(0.0,2.15,"Krise / drohende ZU",GREY),(2.22,1.55,"Antrag",BLUE),
      (3.84,4.1,"Vorläufiges Verfahren · Insolvenzgeld (2–3 Mon.)",GREEN),
-     (8.01,1.9,"Eröffnung",BLUE),(9.98,2.35,"Berichts- & Prüfungstermin",GREY)]
-yl=CT+0.3
+     (8.01,1.9,"Eröffnung",BLUE),(9.98,2.35,"Berichts-/Prüfungstermin",GREY)]
+yl=1.9
 for vx,vw,t,c in ins:
-    shape(s,RR,sx(vx),yl,vw*scale,0.62,fill=c,radius=0.10)
-    box(s,sx(vx)+0.04,yl,vw*scale-0.08,0.62,[para(t,9.5,WHITE,BFONT,bold=True,a='c',ls=10.5)],anchor='m')
-# Phasen-Lane
-box(s,LEFT,CT+1.25,8,0.28,[para("M&A-PROZESS · PHASEN & ACHIEVEMENT-GATES",11,ORANGE,HFONT,bold=True)])
-phases=[(0.0,2.15,"0","Sourcing & Ansprache"),(2.22,1.55,"1","NDA & Interesse"),
-        (3.84,2.0,"2","Unterlagen & Konzept"),(5.92,2.0,"3","DD & Bewertung"),
-        (8.01,1.9,"4","C-Level & Preis"),(9.98,1.15,"5","Verhandlung"),(11.21,1.12,"6","Closing")]
-yp=CT+1.6
+    shape(s,RR,sx(vx),yl,vw*scale,0.5,fill=c,radius=0.12)
+    box(s,sx(vx)+0.04,yl,vw*scale-0.08,0.5,[para(t,8.5,WHITE,BFONT,bold=True,a='c',ls=9.5)],anchor='m')
+box(s,LEFT,2.5,8,0.22,[para("M&A-PHASEN & GATES",10,ORANGE,HFONT,bold=True)])
+phases=[(0.0,2.15,"0","Sourcing"),(2.22,1.55,"1","NDA & Datenraum"),
+        (3.84,2.0,"2","Angebot / LOI"),(5.92,2.0,"3","DD & Bewertung"),
+        (8.01,1.9,"4","Verbindl. Angebot"),(9.98,1.15,"5","Signing"),(11.21,1.12,"6","Closing")]
+yp=2.74
 for vx,vw,n,t in phases:
-    shape(s,RR,sx(vx),yp,vw*scale,0.85,fill=BLUETINT,line=BLUE,lw=1,radius=0.10)
-    box(s,sx(vx)+0.07,yp+0.05,0.5,0.38,[para(n,18,BLUE,HFONT,bold=True)])
-    box(s,sx(vx)+0.06,yp+0.42,vw*scale-0.1,0.4,[para(t,9,DARK,BFONT,bold=True,ls=10)])
-# Gates (Rauten unter Phasenmitte)
-gates=[(1.075,"G0","Target qualifiziert",1.6),(2.995,"G1","NDA + Datenraum",1.6),
-       (4.84,"G2","Indik. Angebot / LOI",1.7),(6.92,"G3","DD & Bewertung fertig",1.7),
-       (8.96,"G4","Freigabe Gläubiger­ausschuss",1.75),(10.555,"G5","Signing",1.0),(11.77,"G6","Closing",1.2)]
-gy=CT+2.7
-for cx,g,t,lw in gates:
+    shape(s,RR,sx(vx),yp,vw*scale,0.66,fill=BLUETINT,line=BLUE,lw=1,radius=0.10)
+    box(s,sx(vx)+0.06,yp+0.02,0.4,0.3,[para(n,14,BLUE,HFONT,bold=True)])
+    box(s,sx(vx)+0.05,yp+0.32,vw*scale-0.1,0.32,[para(t,8,DARK,BFONT,bold=True,ls=8.5)])
+gates=[(1.075,"G0","Target ok"),(2.995,"G1","Datenraum"),(4.84,"G2","LOI"),
+       (6.92,"G3","DD fertig"),(8.96,"G4","Einigung"),(10.555,"G5","Signing¹"),(11.77,"G6","Closing")]
+gy=3.58
+for cx,g,t in gates:
     cxi=sx(cx)
-    d=shape(s,DIA,cxi-0.30,gy,0.6,0.6,fill=ORANGE)
-    label(s,d,g,11,"3A2A00",BFONT,anchor='m')
-    lx=max(LEFT,min(cxi-lw/2, RIGHT-lw))
-    box(s,lx,gy+0.64,lw,0.6,[para(t,8.5,GREY,BFONT,a='c',ls=9.5)])
-box(s,LEFT,CB-0.35,CW,0.35,[para("Best-Practice-Kaufzeitpunkt: im vorläufigen Verfahren / rund um die Eröffnung — bevor Patienten & Fachkräfte abwandern und solange Insolvenzgeld die Löhne trägt.",11,ORANGE,BFONT,italic=True,bold=True,a='c')])
+    d=shape(s,DIA,cxi-0.24,gy,0.48,0.48,fill=ORANGE)
+    label(s,d,g,9.5,"3A2A00",BFONT,anchor='m')
+    lw=1.45
+    lx=max(LEFT,min(cxi-lw/2,RIGHT-lw))
+    box(s,lx,gy+0.5,lw,0.3,[para(t,8,GREY,BFONT,a='c')])
+b1=4.52
+shape(s,RR,LEFT,b1,CW,0.42,fill=BLUE,radius=0.08)
+box(s,LEFT+0.2,b1,CW-0.4,0.42,[{'a':'l','ls':12,'r':[{'t':"Durchgehend   ",'s':10.5,'c':LIME,'f':HFONT,'b':True},{'t':"C-Level-/Entscheider-Mandat — spätestens ab dem indikativen Angebot (LOI)",'s':10.5,'c':WHITE,'f':BFONT}]}],anchor='m')
+b2=5.02
+shape(s,RR,LEFT,b2,CW,0.42,fill=GREEN,radius=0.08)
+box(s,LEFT+0.2,b2,CW-0.4,0.42,[{'a':'l','ls':12,'r':[{'t':"Parallel   ",'s':10.5,'c':"EAF6EC",'f':HFONT,'b':True},{'t':"Kassen-/Zulassungsklärung & Personalübergang (§ 613a) laufen mit",'s':10.5,'c':WHITE,'f':BFONT}]}],anchor='m')
+box(s,LEFT,5.6,CW,0.6,[
+  para("¹ Signing unter aufschiebender Bedingung: Zustimmung von Gläubigerausschuss + Gericht.",9.5,GREY,BFONT,italic=True,sa=2),
+  para("Best-Practice-Kaufzeitpunkt: im vorläufigen Verfahren / rund um die Eröffnung — bevor Patienten & Fachkräfte abwandern.",10,ORANGE,BFONT,bold=True,italic=True)])
 
 # =====================================================================
-# 7 — PHASEN 0–3
+# 7 — PHASEN kompakt (Tabelle)
 # =====================================================================
-def phase_rows(s,rows):
-    y=CT; rh=1.13
-    for n,t,d,g,gc in rows:
-        shape(s,RR,LEFT,y,CW,rh-0.1,fill=WHITE,line=BORDER,lw=1,radius=0.05)
-        icon_circle(s,LEFT+0.22,y+0.26,0.55,BLUE,n,18)
-        box(s,LEFT+0.95,y+0.13,7.0,0.38,[para(t,14.5,BLUE,HFONT,bold=True)])
-        box(s,LEFT+0.95,y+0.5,7.4,0.5,[para(d,10.5,DARK,BFONT,ls=12.5)])
-        d2=shape(s,DIA,LEFT+8.75,y+0.32,0.4,0.4,fill=ORANGE)
-        shape(s,RR,LEFT+9.25,y+0.28,2.2,0.5,fill=ORANGETINT,line=ORANGE,lw=1,radius=0.14)
-        box(s,LEFT+9.3,y+0.28,2.1,0.5,[para(g,10,"8A5A10",BFONT,bold=True,a='c',ls=11)],anchor='m')
-        y+=rh
-s=content_slide("Phasen 0–3: Sourcing bis Bewertung","Ablauf im Detail · Teil 1")
-phase_rows(s,[
- ("0","Sourcing & Ansprache","Targets identifizieren (Kaltakquise, Netzwerk, Verwalter). Insolvenzbekanntmachungen laufend monitoren.","G0 · Target",ORANGE),
- ("1","NDA & Verkaufsinteresse","Verkaufsbereitschaft klären, NDA zeichnen, Datenraum-Zugang. Verfahrensart & Ansprechpartner feststellen.","G1 · NDA + DR",ORANGE),
- ("2","Unterlagen & Konzept","§ 132l/132a-Vertrag, Anlage 2 (Vergütung), MD-Berichte, BWA. Integrations-/Skalierungskonzept skizzieren.","G2 · LOI",ORANGE),
- ("3","Due Diligence & Bewertung","Dokumente nachrechnen, Regress-/Abrechnungsrisiken prüfen. WP & ggf. externes M&A-Team. Bewertung + Sanierungsplan.","G3 · DD fertig",ORANGE)])
+s=content_slide("Phasen im Detail — von Sourcing bis Closing")
+box(s,LEFT,1.68,CW,0.3,[{'a':'l','r':[{'t':"Durchgehend eingebunden: ",'s':10.5,'c':ORANGE,'f':HFONT,'b':True},{'t':"C-Level/Entscheider (Mandat ab LOI) · Kassen-/Zulassungsklärung · Personal (§ 613a)",'s':10.5,'c':GREY,'f':BFONT,'i':True}]}])
+cA=LEFT; wA=2.1; cB=LEFT+2.15; wB=4.5; cC=LEFT+6.7; wC=1.75; cD=LEFT+8.5; wD=2.48
+hy=2.06
+shape(s,RR,LEFT,hy,CW,0.4,fill=BLUE,radius=0.06)
+for cx,cw,t in [(cA,wA,"Phase"),(cB,wB,"Ablauf"),(cC,wC,"Gate / Ergebnis"),(cD,wD,"Wer / extern")]:
+    box(s,cx+0.12,hy,cw-0.15,0.4,[para(t,10.5,WHITE,HFONT,bold=True)],anchor='m')
+tbl=[("0  Sourcing & Ansprache","Targets via Insolvenzbekanntmachungen & Netzwerk; Verwalter/Berater kontaktieren","Target qualifiziert","intern + Verwalter"),
+     ("1  NDA & Datenraum","NDA; Zugang zum (Verwalter-)Datenraum; Verfahrensart & Partner klären","Datenraum-Zugang","Verwalter"),
+     ("2  Indik. Angebot / LOI","Info-Memo prüfen; nicht-bindendes Angebot; internes Mandat einholen","LOI","C-Level"),
+     ("3  DD & Bewertung","§ 132l, Regress, MD, Personal, Patienten; Bewertung + Konzept","DD abgeschlossen","WP / Anwalt / M&A"),
+     ("4  Verbindl. Angebot & Verhandlung","Binding Offer; Preis, Bedingungen, § 613a, Betreiberwechsel/Zulassung","Einigung","Verwalter / Kassen"),
+     ("5  Signing (unter Vorbehalt)","Vertrag unter aufschiebender Bedingung: Gläubigerausschuss + Gericht","Signing","Gericht / Gläubiger"),
+     ("6  Closing & Integration","Vollzug; Übergang Patienten & Personal; Konzernanbindung","Closing","intern")]
+ry=hy+0.42; rh=0.57
+for i,(a,b,c,d) in enumerate(tbl):
+    if i%2==0: shape(s,RECT,LEFT,ry,CW,rh,fill=GREYTINT)
+    box(s,cA+0.1,ry,wA-0.1,rh,[para(a,9.5,BLUE,BFONT,bold=True,ls=11)],anchor='m')
+    box(s,cB+0.12,ry,wB-0.2,rh,[para(b,9,DARK,BFONT,ls=10.5)],anchor='m')
+    box(s,cC+0.12,ry,wC-0.15,rh,[para(c,9,"8A5A10",BFONT,bold=True,ls=10.5)],anchor='m')
+    box(s,cD+0.12,ry,wD-0.2,rh,[para(d,9,GREY,BFONT,ls=10.5)],anchor='m')
+    ry+=rh
 
 # =====================================================================
-# 8 — PHASEN 4–6
+# 8 — DUE DILIGENCE & ROTE FLAGGEN (zusammengeführt aus alt 9+10)
 # =====================================================================
-s=content_slide("Phasen 4–6: Freigabe bis Integration","Ablauf im Detail · Teil 2")
-rows=[("4","C-Level & interne Kaufpreislogik","Target intern vorstellen, Kaufpreiskomponenten festlegen (Assets, Patientenwert, Sanierungskosten, Risikoabschläge). Finanzierung sichern.","— intern",False),
-      ("4a","Freigabe der Insolvenzorgane","Insolvenzspezifisch: Kaufvertrag steht unter der aufschiebenden Bedingung der Zustimmung von Gericht + Gläubigerausschuss.","G4 · Freigabe",True),
-      ("5","Verhandlung & Einigung","Preis, Finanzierung, minimale Gewährleistungen, Betreiberwechsel/Zulassung mit Kassen, Personalübergang (§ 613a).","G5 · Signing",False),
-      ("6","Closing & Integration","Vollzug, Übergang Patienten & Personal, Konzernanbindung, PDL/Fachkräfte binden, Kassenverträge aktivieren.","G6 · Closing",False)]
-y=CT; rh=1.13
-for n,t,d,g,hl in rows:
-    cardfill=BLUE if hl else WHITE
-    tcol=WHITE if hl else DARK; ttl=WHITE if hl else BLUE
-    shape(s,RR,LEFT,y,CW,rh-0.1,fill=cardfill,line=(BLUE if hl else BORDER),lw=1,radius=0.05)
-    icon_circle(s,LEFT+0.22,y+0.26,0.55,(ORANGE if hl else BLUE),n,(14 if len(n)>1 else 18),tcolor=("3A2A00" if hl else WHITE))
-    box(s,LEFT+0.95,y+0.13,7.4,0.38,[para(t,14.5,ttl,HFONT,bold=True)])
-    box(s,LEFT+0.95,y+0.5,7.5,0.55,[para(d,10.5,tcol,BFONT,ls=12.5)])
-    d2=shape(s,DIA,LEFT+8.9,y+0.32,0.4,0.4,fill=ORANGE)
-    shape(s,RR,LEFT+9.4,y+0.28,2.05,0.5,fill=(BLUEDK if hl else ORANGETINT),line=ORANGE,lw=1,radius=0.14)
-    box(s,LEFT+9.4,y+0.28,2.05,0.5,[para(g,10,(ORANGE if hl else "8A5A10"),BFONT,bold=True,a='c')],anchor='m')
-    y+=rh
+s=content_slide("Due Diligence: Prüffokus & rote Flaggen")
+LX=LEFT; RX=LEFT+5.63; colw=5.3
+box(s,LX,1.72,colw,0.28,[para("PRÜFFOKUS (PFLEGE-DD)",11,BLUE,HFONT,bold=True)])
+box(s,RX,1.72,colw,0.28,[para("ROTE FLAGGEN",11,RED,HFONT,bold=True)])
+ddL=[("Versorgungsvertrag & Zulassung","§ 132l/§ 132a SGB V, § 72 SGB XI — gültig & übertragbar?",BLUE),
+     ("Vergütung (Anlage 2)","nachrechnen: tragfähig, marktüblich, verhandelbar?",GREEN),
+     ("MD-Prüfung & Ruf","Qualitätsberichte, laufende Prüfverfahren, Mängel",TEAL),
+     ("Abrechnung & Regress","Nachweise vs. Abrechnung; latente Rückforderungen",ORANGE),
+     ("Personalqualifikation & PDL","examinierte Fachkräfte? fachgerecht erbracht?",BLUE),
+     ("Patientenstruktur","Fallzahlen vs. Verordnungen; Loyalität beim Wechsel",GREEN)]
+ddR=[("Scheinpatienten / Karteileichen","Fallzahlen gegen Verordnungen & Abrechnungen prüfen"),
+     ("Nicht erbrachte Leistungen","Regress der Kassen + § 263 StGB — im Share Deal geerbt"),
+     ("Qualifikations-Fake / Key-Person","unqualifiziert als Fachleistung; PDL wandert ab"),
+     ("Assets nicht frei","Sicherungsübereignung, Eigentumsvorbehalt, Leasing"),
+     ("Geschönte Zahlen / Cherry-Picking","verschwiegene Verluste; „gute“ Verträge ausgegliedert")]
+def itemrow(x,y,w,color,title,note):
+    shape(s,OV,x,y+0.06,0.15,0.15,fill=color)
+    box(s,x+0.28,y-0.02,w-0.3,0.54,[{'a':'l','ls':11,'r':[{'t':title+"  ",'s':10.5,'c':color,'f':HFONT,'b':True},{'t':note,'s':9,'c':DARK,'f':BFONT}]}])
+yy=2.06
+for t,n,c in ddL: itemrow(LX,yy,colw,c,t,n); yy+=0.6
+yy=2.06
+for t,n in ddR: itemrow(RX,yy,colw,RED,t,n); yy+=0.6
+shape(s,RR,LEFT,5.9,CW,0.55,fill=BLUE,radius=0.06)
+box(s,LEFT+0.25,5.9,CW-0.5,0.55,[{'a':'l','ls':12,'r':[{'t':"Gegenmittel:  ",'s':11,'c':LIME,'f':HFONT,'b':True},{'t':"Umsatz gegen dokumentierte Leistungen · Zulassung/§ 132l bei den Kassen verifizieren · PDL & Fachkräfte binden.",'s':10.5,'c':WHITE,'f':BFONT}]}],anchor='m')
 
 # =====================================================================
-# 9 — DUE DILIGENCE FOKUS (Grid 2x3)
+# 9 — KAUFPREISLOGIK (Asset Deal vs. Insolvenzplan / Schutzschirm)
 # =====================================================================
-s=content_slide("Due Diligence: die pflegespezifischen Pflichtchecks","Prüf-Fokus")
-dd=[("1","Versorgungsverträge & Zulassung","§ 132l / § 132a SGB V, § 72 SGB XI gültig & übertragbar? Noch in der Kassenliste?",BLUE),
-    ("2","Vergütung (Anlage 2)","Vergütungsvereinbarungen nachrechnen — tragfähig, marktüblich, verhandelbar?",GREEN),
-    ("3","MD-Prüfung & Ruf","Qualitätsberichte, laufende Prüfverfahren, drohende Kündigung, Mängelbescheide.",PURPLE),
-    ("4","Abrechnung & Regress","Leistungsnachweise vs. Abrechnung; latente Rückforderungen (Jahre rückwirkend).",RED),
-    ("5","Personalqualifikation","Examinierte Fachkräfte, PDL vorhanden? Behandlungspflege fachgerecht erbracht?",ORANGE),
-    ("6","Patientenstruktur","Fallzahlen vs. Verordnungen; Konzentrationsrisiko; Loyalität beim Wechsel.",BLUE)]
-cw=(CW-0.4)/3; rh=2.25; x0=LEFT; y0=CT
-for i,(n,t,d,c) in enumerate(dd):
-    col=i%3; row=i//3
-    x=x0+col*(cw+0.2); y=y0+row*(rh+0.2)
-    shape(s,RR,x,y,cw,rh,fill=WHITE,line=BORDER,lw=1,radius=0.05)
-    icon_circle(s,x+0.22,y+0.22,0.5,c,n,15)
-    box(s,x+0.85,y+0.2,cw-1.05,0.6,[para(t,12.5,c,HFONT,bold=True,ls=14)],anchor='m')
-    box(s,x+0.25,y+0.95,cw-0.5,1.15,[para(d,10.5,DARK,BFONT,ls=13)])
+s=content_slide("Kaufpreislogik: Asset Deal vs. Insolvenzplan")
+def logic_card(x,color,title,sub,lines,note):
+    shape(s,RR,x,CT,5.3,3.9,fill=WHITE,line=BORDER,lw=1,radius=0.05)
+    shape(s,RR,x,CT,5.3,0.7,fill=color,radius=0.07); shape(s,RECT,x,CT+0.35,5.3,0.35,fill=color)
+    box(s,x+0.2,CT+0.04,4.9,0.62,[para(title,13.5,WHITE,HFONT,bold=True,ls=15)],anchor='m')
+    box(s,x+0.25,CT+0.78,4.85,0.3,[para(sub,10.5,color,BFONT,bold=True,italic=True)])
+    yy=CT+1.15
+    for sym,tx in lines:
+        cc = GREEN if sym=="+" else (RED if sym=="−" else (BLUE if sym=="=" else GREY))
+        if sym: box(s,x+0.25,yy,0.35,0.32,[para(sym,13,cc,HFONT,bold=True)])
+        box(s,x+0.62,yy,4.5,0.36,[para(tx,10,DARK,BFONT,ls=11.5)],anchor='t')
+        yy+=0.42
+    shape(s,RR,x+0.2,CT+3.32,4.9,0.44,fill=GREYTINT,radius=0.12)
+    box(s,x+0.3,CT+3.32,4.7,0.44,[para(note,9.5,color,BFONT,bold=True,italic=True,ls=11)],anchor='m')
+logic_card(LEFT,BLUE,"Asset Deal — übertragende Sanierung","substanz-/masseorientiert",
+   [("","Substanz: unbelastete Assets"),("+","Going-Concern (Patienten, Personal, Zulassung)"),
+    ("−","Sanierungskosten (Personal, Zulassung)"),("−","Risikoabschläge (Regress, keine Garantien)"),
+    ("=","risikoadjustierter Angebotspreis")],
+   "Kein EBITDA-Multiple — zerschlagungsnah.")
+logic_card(LEFT+5.68,BLUEDK,"Insolvenzplan — Eigenverwaltung / Schutzschirm","going-concern-/ertragswertorientiert",
+   [("","Kein Zerschlagungspreis, sondern Planbeitrag:"),("+","frisches Geld / Debt-to-Equity"),
+    ("+","Going Concern (Ertragswert / DCF)"),("−","Sanierungsbedarf & Planquote an Gläubiger"),
+    ("=","Rechtsträger + Zulassung bleiben")],
+   "Schutzschirm = Selbstsanierung, oft OHNE klassischen Kaufpreis.")
+shape(s,RR,LEFT,CT+4.02,CW,0.55,fill=ORANGETINT,line=ORANGE,lw=1,radius=0.10)
+box(s,LEFT+0.3,CT+4.02,CW-0.6,0.55,[{'a':'l','ls':12,'r':[{'t':"Merke:  ",'s':11,'c':"8A5A10",'f':HFONT,'b':True},{'t':"Schutzschirm/Eigenverwaltung zielt auf den Insolvenzplan → Preislogik = Going-Concern, nicht Zerschlagung.",'s':10.5,'c':DARK,'f':BFONT}]}],anchor='m')
 
 # =====================================================================
-# 10 — SCAM-RADAR
+# 10 — WAS PASSIERT MIT DEN SCHULDEN?
 # =====================================================================
-s=content_slide("Scam-Radar: typische Täuschungen","Rote Flaggen")
-box(s,LEFT,CT-0.02,6,0.28,[para("ALLGEMEIN (INSOLVENZNÄHE)",11,BLUE,HFONT,bold=True)])
-box(s,LEFT+5.63,CT-0.02,6,0.28,[para("PFLEGE-SPEZIFISCH (AM GEFÄHRLICHSTEN)",11,RED,HFONT,bold=True)])
-gen=[("Geschönte Zahlen / verschwiegene Verluste","Aufklärungspflicht verletzt → arglistige Täuschung, Rückabwicklung"),
-     ("Assets nicht frei","Sicherungsübereignung, Eigentumsvorbehalt, Leasing — weniger Substanz"),
-     ("Cherry-Picking vor Insolvenz","„Gute“ Verträge ausgegliedert — du bekommst die Hülle")]
-pfl=[("Scheinpatienten / Karteileichen","Aufgeblähte Fallzahlen → gegen Verordnungen & Abrechnungen prüfen"),
-     ("Nicht erbrachte Leistungen","Latente Regresse der Kassen + § 263 StGB — beim Share Deal geerbt"),
-     ("Qualifikations-Fake / Key-Person","Unqualifiziertes Personal als Fachleistung; PDL wandert ab → Zulassung wackelt")]
-def flags(x,data,accent,tint):
-    y=CT+0.32
-    for h,t in data:
-        shape(s,RR,x,y,5.35,1.05,fill=tint,line=accent,lw=1,radius=0.06)
-        shape(s,RR,x,y,0.12,1.05,fill=accent,radius=0.3)
-        box(s,x+0.28,y+0.13,4.95,0.35,[para(h,12.5,DARK,HFONT,bold=True)])
-        box(s,x+0.28,y+0.5,4.95,0.5,[para(t,10.5,"444444",BFONT,ls=12.5)])
-        y+=1.18
-flags(LEFT,gen,BLUE,BLUETINT)
-flags(LEFT+5.63,pfl,RED,REDTINT)
-shape(s,RR,LEFT,CB-0.62,CW,0.6,fill=BLUE,radius=0.06)
-box(s,LEFT+0.25,CB-0.62,CW-0.5,0.6,[{'a':'l','r':[
-    {'t':"Gegenmittel:  ",'s':12.5,'c':LIME,'f':HFONT,'b':True},
-    {'t':"Umsatz gegen dokumentierte Leistungen prüfen · Zulassung/§ 132l-Status bei den Kassen verifizieren · PDL & Fachkräfte vertraglich binden.",'s':11.5,'c':WHITE,'f':BFONT}]}],anchor='m')
+s=content_slide("Was passiert mit den Schulden?")
+def debt_card(x,color,title,pts):
+    shape(s,RR,x,CT,5.3,2.7,fill=WHITE,line=BORDER,lw=1,radius=0.05)
+    shape(s,RR,x,CT,5.3,0.62,fill=color,radius=0.08); shape(s,RECT,x,CT+0.31,5.3,0.31,fill=color)
+    box(s,x+0.2,CT,4.9,0.62,[para(title,14,WHITE,HFONT,bold=True)],anchor='m')
+    yy=CT+0.78
+    for p in pts:
+        shape(s,OV,x+0.25,yy+0.05,0.13,0.13,fill=color)
+        box(s,x+0.52,yy-0.02,4.6,0.44,[para(p,10.5,DARK,BFONT,ls=12)])
+        yy+=0.47
+debt_card(LEFT,BLUE,"Asset Deal",
+   ["Schulden bleiben im insolventen Rechtsträger (Hülle)","Werden aus dem Verkaufserlös nach Quote bedient","Hülle wird liquidiert","Käufer erhält Assets schuldenfrei"])
+debt_card(LEFT+5.68,BLUEDK,"Insolvenzplan (auch Schutzschirm)",
+   ["Rechtsträger überlebt, Schulden werden restrukturiert","Gläubiger erhalten Quote (Cashflow + Planbeitrag)","Rest wird erlassen (§ 227 InsO) → Firma entschuldet","Zulassung & Verträge bleiben am Träger"])
+by=CT+2.9
+shape(s,RR,LEFT,by,CW,1.35,fill=GREYTINT,radius=0.06)
+box(s,LEFT+0.25,by+0.12,CW-0.5,0.3,[para("WICHTIG — RANGFOLGE & RANDPUNKTE",10.5,RED,HFONT,bold=True)])
+rl=[("1","Zuerst bedient: gesicherte Gläubiger (Absonderung) & Massegläubiger"),
+    ("2","Dann: ungesicherte Gläubiger — reale Quote oft nur 3–5 %"),
+    ("3","Alt-Gesellschafter verlieren Anteile (§ 225a); Löhne bis 3 Mon. via Insolvenzgeld")]
+yy=by+0.46
+for n,t in rl:
+    box(s,LEFT+0.25,yy,0.3,0.28,[para(n+".",10.5,RED,HFONT,bold=True)])
+    box(s,LEFT+0.62,yy,CW-1.0,0.3,[para(t,10.5,DARK,BFONT)])
+    yy+=0.29
 
 # =====================================================================
-# 11 — BEWERTUNG
+# 11 — INTEGRATION (2 Hebel)
 # =====================================================================
-s=content_slide("Kaufpreislogik im Distressed-Kontext","Bewertung")
-box(s,LEFT,CT,CW,0.35,[para("Vom Substanzwert zum risikoadjustierten Angebotspreis:",13.5,BLUE,HFONT,bold=True)])
-blocks=[("Substanz / Assets","Inventar, Fahrzeuge, IT — nur unbelastete Gegenstände",BLUE),
-        ("+ Going-Concern","Patientenstamm, Personal & laufende Zulassung",GREEN),
-        ("− Sanierungskosten","Personalaufbau, Zulassung/Wechsel, Nachqualifikation",ORANGE),
-        ("− Risikoabschläge","Latente Regresse, DD-Lücken, fehlende Garantien",RED)]
-bw=(CW-3*0.45)/4; x=LEFT; y=CT+0.5
-for i,(t,d,c) in enumerate(blocks):
-    shape(s,RR,x,y,bw,2.0,fill=WHITE,line=BORDER,lw=1,radius=0.06)
-    shape(s,RR,x,y,bw,0.6,fill=c,radius=0.09); shape(s,RECT,x,y+0.3,bw,0.3,fill=c)
-    box(s,x+0.1,y,bw-0.2,0.6,[para(t,12.5,WHITE,HFONT,bold=True,a='c',ls=13)],anchor='m')
-    box(s,x+0.18,y+0.72,bw-0.36,1.15,[para(d,10.5,DARK,BFONT,ls=13)])
-    if i<3: box(s,x+bw-0.02,y+0.65,0.5,0.6,[para("→",20,GREY,BFONT,bold=True,a='c')],anchor='m')
-    x+=bw+0.45
-shape(s,RR,LEFT,y+2.25,CW,1.35,fill=BLUE,radius=0.05)
-box(s,LEFT+0.3,y+2.4,CW-0.6,0.4,[para("Ergebnis: risikoadjustierter Angebotspreis",17,WHITE,HFONT,bold=True)])
-for j,t in enumerate(["Kein EBITDA-Multiple — der Verwalter verkauft substanz-/masseorientiert.",
-                      "Fehlende Garantien preislich einkalkulieren — Risiko trägt der Käufer.",
-                      "„Return in 3 Monaten“ nur bei gesunder Substanz + gesicherter Zulassung realistisch."]):
-    yy=y+2.82+j*0.28
-    shape(s,OV,LEFT+0.32,yy+0.06,0.11,0.11,fill=LIME)
-    box(s,LEFT+0.55,yy-0.02,CW-0.9,0.3,[para(t,11,"E9F1F8",BFONT)])
-
-# =====================================================================
-# 12 — INTEGRATION (2 Hebel)
-# =====================================================================
-s=content_slide("Integration & Skalierung — die zwei Hebel","Nach dem Closing")
+s=content_slide("Integration & Skalierung — die zwei Hebel")
 def lever(x,ic,title,num,color,pts):
     shape(s,RR,x,CT,5.35,4.55,fill=WHITE,line=BORDER,lw=1,radius=0.05)
     icon_circle(s,x+0.3,CT+0.3,0.85,color,ic,20)
@@ -411,9 +398,9 @@ lever(LEFT+5.63,"PT","Patienten","2",GREEN,
       ["Versorgungskontinuität beim Wechsel sichern","Verordnungen/Genehmigungen mit Kassen überleiten","Auslastung der Intensiv-WGs erhöhen (Marge)","Zuweiser-/Kliniknetzwerk ausbauen"])
 
 # =====================================================================
-# 13 — RISIKO-AMPEL
+# 12 — RISIKO-AMPEL
 # =====================================================================
-s=content_slide("Risiko-Ampel: worauf das Deal-Team schaut","Steuerung")
+s=content_slide("Risiko-Ampel: worauf das Deal-Team schaut")
 risks=[("Versorgungsvertrag geht nicht über / Abrechnungslücke","HOCH",RED),
        ("Latente Regressforderungen der Kassen","HOCH",RED),
        ("Abwanderung von PDL / Fachkräften","HOCH",RED),
@@ -433,7 +420,7 @@ for i,(t,lvl,c) in enumerate(risks):
     box(s,x+cw2-1.3,y+0.34,1.05,0.37,[para(lvl,10,WHITE,HFONT,bold=True,a='c')],anchor='m')
 
 # =====================================================================
-# 14 — NÄCHSTE SCHRITTE
+# 13 — NÄCHSTE SCHRITTE
 # =====================================================================
 s=content_slide("So kommt der Prozess ins Rollen")
 steps=[("1","Deal-Team & Berater aufsetzen","Fachanwalt Insolvenz- + Medizinrecht, WP, ggf. M&A-Team"),
