@@ -160,6 +160,8 @@ verpflichtende Zusammenarbeit mit Kooperationspartnern), Schutzauftrag nach §§
 | `check_layout.py` | prüft Rahmen, Textüberlauf und Überlappungen |
 | `design-template.pptx` | Haus-Design ohne Folien und ohne Inhalte |
 | `plan.docx` | Strukturvorgabe |
+| `build_fragenliste.js` | erzeugt die Fragenliste für das Gespräch mit der Eigentümerin |
+| `Fragenliste-Eigentuemerin-SKP.docx` | 38 Fragen in acht Blöcken, mit Spalte für Antworten |
 
 Nachbauen: `python3 make_maps.py && python3 build_deck.py && python3 check_layout.py <deck>`
 Die Kreisgrenzen liegen als `kreisgrenzen.geojson` im Ordner.
