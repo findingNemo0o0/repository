@@ -221,3 +221,51 @@ verbot/Cram-down) · § 248 (Bestätigung) · § 251 (Minderheitenschutz) · § 
 ## Quellen
 - Häufigkeit/ESUG/Quoten — https://www.bbl-law.com/lexikon/insolvenzplan/
 - ESUG-Evaluierung (BMJ) — https://www.bmjv.de/SharedDocs/Downloads/DE/Themen/Nav_Themen/101018_Gesamtbericht_Evaluierung_ESUG.pdf
+
+---
+
+# Notizen — Kosten neuer Zulassung + welche Deal-Art wann?
+
+## Kosten einer neuen Zulassung: KEIN Kaufpreis, fast alles indirekt
+Direkt (gering): GmbH-Gründung 1-3k (+25k Stammkapital = Kapital, kein Verlust), IK-Nummer
+kostenlos (ARGE-IK), QM/Hygiene/Haftpflicht/Beratung ~10-30k -> Setup niedrig 5-stellig.
+Indirekt (dominiert):
+- Zeit bis Vertrag: §72 SGB XI 4-6 Monate; §132l (AKI) eher länger (Strukturprüfung).
+- Abrechnungslücke in dieser Zeit: kein Umsatz, aber laufende Kosten -> schnell 6-stellig.
+- AKI-Personalqualifikation: Zusatzqualifikation >=200 Std (140 Theorie + 60 Praktikum)/Fachkraft.
+- Patientenschwund im Fenster = dauerhaft verlorener Umsatz/Wert (der eigentliche Killer).
+Formel: Zulassungskosten = Setup + N Monate laufende Kosten ohne Abrechnung + verlorene Patienten.
+
+## SONDERHEBEL Konzern/Buy-and-Build
+Schlüsselfrage: Habe ich als Käufer schon eine eigene §132l/§72-Zulassung für die Region?
+- JA -> beim Asset Deal Patienten/Personal(§613a)/WG in den EIGENEN zugelassenen Träger saugen,
+  unter EIGENER Zulassung abrechnen -> keine neue Zulassung, keine Lücke, Altlasten bleiben zurück.
+  Voraussetzung: gleiches Bundesland/Landesverbände (§132l regional), Verordnungen ummelden,
+  WG-Mietvertrag übernehmen.
+- Deshalb können strategische Käufer mit Bestandszulassung Distressed-Targets günstig einsammeln.
+
+## Entscheidungsbaum
+F1: Eigene Zulassung für die Region vorhanden?
+  JA  -> Asset Deal in eigenen Träger (günstig, schnell, Altlasten weg, keine Lücke). Default in-region.
+  NEIN-> F2.
+F2: Zulassung des Targets intakt & wertvoll?
+  gekündigt/weg -> Asset Deal / Neuantrag mit Substrat (nichts zu erhalten; keine Altlasten mitkaufen).
+  intakt&wertvoll -> F3.
+F3: Altlasten überschaubar & Abrechnungslücke untragbar?
+  Altlasten gruselig/unquantifizierbar -> Asset Deal (sauberer Schnitt), Zulassungskosten als Preis.
+  Altlasten regelbar + Lücke untragbar (volle AKI-WG) -> Insolvenzplan (Share): Zulassung bleibt,
+  Schulden weg via §227. Kosten: Planquote + langsamer/teurer (Planerstellung >50k, Mehrheiten).
+
+## Kernrechnung
+"Kosten Zulassung verlieren+neu aufbauen (Lücke+Schwund+Rebuild)" vs. "Kosten/Risiko Plan
+(Quote+langsamer+Restrisiko)". Ersteres größer -> Insolvenzplan. Kleiner / eigene Zulassung da
+-> Asset Deal.
+
+## Präsi-To-do
+- Kostentreiber-Grafik "Zulassung: Gebühr ~0, aber Zeit/Lücke/Schwund" + Entscheidungsbaum-Folie.
+- Buy-and-Build-Hebel "eigene Zulassung = Asset Deal wird billig" prominent (das ist euer Vorteil).
+
+## Quellen
+- Gründung/Dauer 4-6 Mon. — https://foundingfits.de/pflegedienst-gruenden ; https://carerockets.com/de/ratgeber/ambulanten-pflegedienst-gruenden
+- §132l Zulassung/Strukturprüfung — https://www.aok.de/gp/ausserklinische-intensivpflege/zulassung-vertraege-nach-132l-sgb-v
+- Zusatzqualifikation 200 Std — https://www.gkv-spitzenverband.de/media/dokumente/krankenversicherung_1/ambulante_leistungen/ausserklinische_intensivpflege/AKI-Rahmenempfehlung-2023-04-03.pdf
