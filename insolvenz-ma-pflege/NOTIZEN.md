@@ -129,3 +129,48 @@ oder Altlasten gruselig → Asset Deal.
 ## Präsi-To-do (wenn wir bearbeiten)
 - Slide 5 (Deal-Strukturen) um Entscheidungsmatrix / Mini-Entscheidungsbaum ergänzen.
 - Evtl. Fallunterscheidungs-Folie: "Vertrag besteht" vs. "Vertrag gekündigt → Neuantrag mit Substrat".
+
+---
+
+# Notizen — "Firma bleibt bestehen, nur Schulden weg": was ist das?
+
+## Kann Trägerbindung variieren?
+Versorgungsvertrag = öffentlich-rechtliches Verhältnis Rechtsträger <-> Kassen. Nicht per
+Kaufvertrag übertragbar (= Kern der Trägerbindung). Was variiert: ob die Bindung bei der
+Transaktionsform ERHALTEN bleibt.
+- Share Deal / Gesellschafterwechsel: gleiche jur. Person -> bleibt (Kassen prüfen Zuverlässigkeit).
+- Formwechsel: Identität bleibt -> bleibt.
+- Verschmelzung/Spaltung (UmwG, Gesamtrechtsnachfolge): kann übergehen, Kassen prüfen neu.
+- Asset Deal / neuer Träger: neue jur. Person -> geht NICHT mit, Neuantrag.
+- Zusätzlich regionale Vertragspraxis (vereinfachter Trägerwechsel möglich). Grundregel bleibt:
+  an der juristischen Person, nicht am Betrieb.
+
+## WICHTIG: das beschriebene Szenario ist KEIN Asset Deal
+"Firma bleibt bestehen, Marke+Verträge kommen mit, nur Schulden nicht" = Insolvenzplan (Share).
+Asset Deal und "Firma bleibt bestehen" schließen sich AUS.
+
+- Asset Deal / übertragende Sanierung: alte GmbH bleibt als LEERE HÜLLE in der Insolvenz,
+  wird abgewickelt. Du nimmst Einzel-Assets in DEINE Gesellschaft. Schulden bleiben in Hülle.
+  Verträge kommen NICHT automatisch (Vertragsübernahme mit Zustimmung; § 103 InsO Wahlrecht
+  Verwalter). Zulassung nicht kaufbar.
+- Insolvenzplan: gleiche GmbH bleibt bestehen, Plan streicht Schulden. Anteile (entschuldet)
+  übernehmen. Marke, Verträge, Versorgungsvertrag/Zulassung, IK-Nummer, Verordnungen, MD-Status
+  bleiben am Rechtsträger.
+
+## Präziser Name / Rechtsanker
+- Sanierung über Insolvenzplan (§§ 217 ff. InsO).
+- § 227 InsO: mit Planerfüllung wird die Gesellschaft von Restverbindlichkeiten befreit
+  ("Schulden weg, Firma bleibt") — Pendant zur Restschuldbefreiung.
+- § 225a InsO (ESUG 2012): Eingriff in Gesellschafterrechte — Anteilsübertragung an Investor
+  oder Debt-to-Equity-Swap.
+- Ökonomisch: Kauf des bereinigten Going Concern = laufendes Unternehmen mit allen
+  Genehmigungen/Beziehungen minus weggeschnittener Verbindlichkeiten.
+
+## Merksätze
+- "Firma bleibt + alle Verträge kommen mit" <=> nur über Insolvenzplan; Schulden weg per § 227.
+- Asset Deal = Hülle stirbt, nur Einzelstücke, Verträge nur mit Zustimmung, Zulassung gar nicht.
+- "Asset Deal UND Firma mit allen Verträgen behalten" ist ein Widerspruch.
+
+## Präsi-To-do
+- Auf Slide 5 klarer trennen: Asset Deal (Hülle stirbt) vs. Insolvenzplan (Rechtsträger lebt,
+  § 227 entschuldet). Ggf. Mini-Schaubild "Hülle + Schulden zurück" vs. "entschuldeter Rechtsträger".
