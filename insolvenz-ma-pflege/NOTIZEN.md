@@ -82,3 +82,50 @@ der eigentliche Kaufwert**.
 - § 74 SGB XI (Kündigung) — https://www.sozialgesetzbuch-sgb.de/sgbxi/74.html
 - Zuverlässigkeit/straffälliger Betreiber — https://publicus.boorberg.de/pflegedienst-strengere-vorgaben-fuer-zuvor-straffaellig-gewordenen-betreiber/
 - AKI GKV-Spitzenverband — https://www.gkv-spitzenverband.de/krankenversicherung/ambulante_leistungen/ausserklinische_intensivpflege/ausserklinische_intensivpflege.jsp
+
+---
+
+# Notizen — Share Deal vs. Asset Deal: was bietet sich an?
+
+**Faustregel: Die Kaufstruktur folgt der Zulassung.**
+Versorgungsvertrag intakt & schwer ersetzbar → Share Deal über Insolvenzplan.
+Vertrag weg / leicht neu zu bekommen & hohe Altlasten → Asset Deal.
+
+## Allgemeine Logik (jede Insolvenz) → Asset Deal ist Standard
+- Altverbindlichkeiten bleiben in der Masse, keine geerbten Risiken, sauberer Neustart.
+- Schneller: Verwalter verkauft mit Zustimmung Gläubigerausschuss (kein Abstimmungsverfahren).
+
+## In der Pflege kippt EIN Faktor: Zulassung ist trägergebunden
+- Asset Deal: Versorgungsvertrag geht NICHT mit → Abrechnungslücke, Neuantrag, Patientenabwanderung.
+- Share Deal: Rechtsträger überlebt → Vertrag, IK-Nummer, Verordnungen, MD-Status, Patienten/
+  Personal bleiben; kein Abrechnungsbruch.
+
+## Clou: Insolvenzplan = Beste aus beidem
+Investor übernimmt Rechtsträger, Plan entschuldet die Gesellschaft → Zulassung behalten
+UND Altschulden los. Deshalb in der Pflege oft überlegen, obwohl Asset Deal der Lehrbuch-Favorit ist.
+
+## Entscheidungsmatrix
+| Faktor | Asset Deal | Share Deal / Insolvenzplan |
+|---|---|---|
+| Versorgungsvertrag | gekündigt / leicht neu | intakt, wertvoll, langwierig neu |
+| Abrechnungskontinuität | unkritisch | muss lückenlos sein (Intensivpflege) |
+| Altlasten (Regress/Betrug/Prozesse) | hoch/unquantifizierbar → abschütteln | quantifizierbar & über Plan regelbar |
+| Zeitdruck | hoch (Asset Deal schneller) | Plan dauert länger (Gläubigermehrheiten) |
+| Zuverlässigkeit Alt-Führung | belastet → sauberer Schnitt | unbelastet, nur Gesellschafterwechsel |
+
+## Kehrseiten
+- Insolvenzplan langsamer/unsicherer (Gläubigermehrheiten). Wenn Patienten/Personal schneller
+  abwandern als der Plan durchkommt → Asset Deal + zügiger Neuantrag ggf. praktischer.
+- Share Deal: Zulassung nicht 100 % geschenkt — Kassen prüfen ggf. Zuverlässigkeit bei
+  Change-of-Control; Anzeigepflichten möglich.
+- Insolvenzplan: einzelne Verbindlichkeiten überleben trotz Entschuldung (öff.-rechtl./Steuer,
+  Anfechtung) → DD trotzdem nötig.
+
+## Quintessenz
+Erst klären: "Wie viel ist die Zulassung wert & wie schwer neu zu bekommen?" → Struktur folgt fast
+automatisch. In AKI meist teuer/langsam nachzubauen → Tendenz Insolvenzplan; außer Vertrag gekündigt
+oder Altlasten gruselig → Asset Deal.
+
+## Präsi-To-do (wenn wir bearbeiten)
+- Slide 5 (Deal-Strukturen) um Entscheidungsmatrix / Mini-Entscheidungsbaum ergänzen.
+- Evtl. Fallunterscheidungs-Folie: "Vertrag besteht" vs. "Vertrag gekündigt → Neuantrag mit Substrat".
