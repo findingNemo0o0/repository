@@ -174,3 +174,50 @@ Asset Deal und "Firma bleibt bestehen" schließen sich AUS.
 ## Präsi-To-do
 - Auf Slide 5 klarer trennen: Asset Deal (Hülle stirbt) vs. Insolvenzplan (Rechtsträger lebt,
   § 227 entschuldet). Ggf. Mini-Schaubild "Hülle + Schulden zurück" vs. "entschuldeter Rechtsträger".
+
+---
+
+# Notizen — Ist der Insolvenzplan gängig & warum "verzichten" Gläubiger?
+
+## Terminologie
+Schuldner = die insolvente Firma (wird entschuldet). Auf Geld verzichten die GLÄUBIGER.
+
+## Gängigkeit
+- Nur ca. 1-2 % ALLER Insolvenzen enden über Insolvenzplan; Mehrheit = Zerschlagung/Asset Deal.
+- Bei GROSSEN Verfahren ~8 % und steigend seit ESUG (2012).
+- Fazit: etabliertes Standard-Instrument, aber kein zahlenmäßiger Normalfall. Gezielt dann,
+  wenn lebender Betrieb/Zulassung > Einzelteile (Pflege/AKI oft der Fall). Kleine Dienste eher
+  Asset Deal (Aufwand); Plan lohnt bei mittelgroßen mit werttreibender Zulassung.
+
+## Wer verzichtet: die Gläubiger
+Finanzamt, Sozialversicherung/Krankenkassen (Beiträge, ggf. Regress), Banken, Lieferanten,
+Vermieter/Leasing, teils Arbeitnehmer (Löhne, oft via Insolvenzgeld gedeckt).
+
+## Warum sie verzichten (Rationalität, nicht Güte)
+1. In Insolvenz ohnehin nicht genug für alle. Frage je Gläubiger: Zerschlagung vs. Plan?
+2. Zerschlagungsquote ungesicherter Gläubiger im Schnitt nur 3-5 %, oft ~0.
+3. Investor bringt frisches Geld (Kaufpreis/Planbeitrag) -> finanziert die Quote; lebendes
+   Unternehmen wert > Einzelteile -> Planquote meist >= Zerschlagungsquote.
+4. Lieber kleine sichere Quote sofort als fast nichts nach langer Abwicklung.
+5. Best-Interest-Test / Obstruktionsverbot (§ 245, § 251 InsO): kein Gläubiger darf schlechter
+   stehen als bei Regelabwicklung -> sonst kippt der Plan. Macht Verzicht zumutbar.
+6. Keine Einstimmigkeit: Abstimmung in Gruppen, je Gruppe Kopf- + Summenmehrheit (§ 244);
+   überstimmte Minderheit gebunden (Cram-down § 245); Gerichtsbestätigung (§ 248).
+
+## Alt-Gesellschafter
+Verlieren i.d.R. Anteile (Eigenkapital nachrangig, faktisch wertlos) -> § 225a InsO
+(Anteilsübertragung an Investor / Debt-to-Equity-Swap).
+
+## Mechanismus in einem Satz
+Investor zahlt Betrag -> Gläubiger bekommen Quote >= Zerschlagung -> Rest der Schulden per
+Gerichtsbeschluss erlassen (§ 227) -> entschuldete Firma inkl. Zulassung gehört dem Investor.
+Plan aufstellen: Schuldner (Eigenverwaltung) oder Verwalter (§ 218); Investorenangebot steckt im Plan.
+
+## Rechtsanker
+§§ 217 ff. InsO (Insolvenzplan) · § 218 (Vorlage) · § 244 (Gruppen-Mehrheit) · § 245 (Obstruktions-
+verbot/Cram-down) · § 248 (Bestätigung) · § 251 (Minderheitenschutz) · § 227 (Entschuldung) ·
+§ 225a (Gesellschafterrechte/Debt-Equity).
+
+## Quellen
+- Häufigkeit/ESUG/Quoten — https://www.bbl-law.com/lexikon/insolvenzplan/
+- ESUG-Evaluierung (BMJ) — https://www.bmjv.de/SharedDocs/Downloads/DE/Themen/Nav_Themen/101018_Gesamtbericht_Evaluierung_ESUG.pdf
