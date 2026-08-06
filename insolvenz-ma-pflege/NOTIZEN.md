@@ -269,3 +269,40 @@ F3: Altlasten überschaubar & Abrechnungslücke untragbar?
 - Gründung/Dauer 4-6 Mon. — https://foundingfits.de/pflegedienst-gruenden ; https://carerockets.com/de/ratgeber/ambulanten-pflegedienst-gruenden
 - §132l Zulassung/Strukturprüfung — https://www.aok.de/gp/ausserklinische-intensivpflege/zulassung-vertraege-nach-132l-sgb-v
 - Zusatzqualifikation 200 Std — https://www.gkv-spitzenverband.de/media/dokumente/krankenversicherung_1/ambulante_leistungen/ausserklinische_intensivpflege/AKI-Rahmenempfehlung-2023-04-03.pdf
+
+---
+
+# Notizen — Kein Sofort-Abbruch bei Zulassungsverlust (Weiterversorgung)
+
+## Zwei Ebenen trennen
+- Versorgungsvertrag (Kassen, öffentlich-rechtlich): regelt Abrechnung. Weg = kein Umsatz mehr.
+- Pflegevertrag mit Patient (zivilrechtlich) + Garantenpflicht: regelt tatsächliche Versorgung -> bricht NICHT über Nacht weg.
+=> Zulassungsverlust heißt zuerst "darf nicht mehr abrechnen", NICHT "Patienten heute fallen lassen".
+
+## Übergangsphase fast immer vorhanden
+- Ordentliche Kündigung Versorgungsvertrag: 1 Jahr Frist (§74 SGB XI). Betrieb läuft + rechnet weiter,
+  Patienten über Monate geordnet übergeleitet. Großer Runway.
+- Fristlose Kündigung (nur grobe Pflichtverletzung): Abrechnungsrecht endet sofort, ABER geordnete
+  Überleitung an Nachversorger; kein abrupter Abbruch.
+- Insolvenz selbst beendet Zulassung NICHT -> Verwalter kann fortführen und weiter abrechnen.
+
+## Wer sichert Kontinuität
+- Sicherstellungsauftrag der Kassen: organisieren Ersatzversorgung, verteilen Patienten auf andere Anbieter.
+- Garantenpflicht: weiterversorgen bis Übergabe; bei Intensivpflege (lebenserhaltend) erst recht.
+  Abrupt einstellen = unterlassene Hilfeleistung (§323c StGB), ggf. schlimmer.
+- Patienten können jederzeit fristlos wechseln; Pflegedienst braucht Grund+Frist.
+
+## Business-Twist (wichtig)
+Geordnete Überleitung = Grund, warum Substrat schmilzt: Patienten werden auf Wettbewerber verteilt.
+Patientenschutz (kein Abbruch) = Abfluss des Kaufwerts. Kein Cliff, aber "Ausbluten" über Wochen/Monate.
+Chance: selbst der Nachversorger sein -> mit eigener Zulassung schnell auffangen statt verlieren.
+Timing = alles; Bestandszulassung besonders wertvoll (nahtlose Übernahme).
+
+## Präsi-To-do
+- Bei "Zeitfenster"-Argument klarstellen: kein Sofortabbruch, aber aktive Umverteilung -> Schnellster gewinnt.
+- Ggf. kleine Grafik: Zulassungsverlust -> Überleitungsphase -> Patienten zu Wettbewerbern ODER zu uns (Nachversorger).
+
+## Quellen
+- §74 SGB XI (Kündigung/Fristen) — https://www.sozialgesetzbuch-sgb.de/sgbxi/74.html
+- Pflegedienst-Abwicklung/Überleitung — https://advocura-rechtsanwaelte.de/pflegedienst-aufgeben-abwicklung/
+- Kündigung durch Pflegedienst (Rechte) — https://www.biva.de/aus-unserer-beratungsarbeit/was-tun-wenn-der-pflegedienst-kuendigt/
