@@ -223,47 +223,56 @@ box(s,LEFT+2.25,ty+0.16,CW-2.4,1.3,[
     para("Im Asset Deal geht er NICHT automatisch über → drohende Abrechnungslücke. Betreiberwechsel vorab mit den Kassen klären; in der Intensivpflege ist der Insolvenzplan deshalb oft überlegen.",11.5,"E9F1F8",BFONT,ls=14)],anchor='m')
 
 # =====================================================================
-# 6 — DER PROZESS (Zeitstrahl, zusammengeführt aus alt 6–8)
+# 6 — ZEITPLAN / GANTT (Krise -> Closing, parallele Spuren + Milestones)
 # =====================================================================
-s=content_slide("Der Prozess: Insolvenz-Achse × M&A-Phasen 0–6")
-scale=CW/12.33
-def sx(v): return LEFT+v*scale
-box(s,LEFT,1.66,6,0.22,[para("INSOLVENZ-VERFAHREN",10,BLUE,HFONT,bold=True)])
-ins=[(0.0,2.15,"Krise / drohende ZU",GREY),(2.22,1.55,"Antrag",BLUE),
-     (3.84,4.1,"Vorläufiges Verfahren · Insolvenzgeld (2–3 Mon.)",GREEN),
-     (8.01,1.9,"Eröffnung",BLUE),(9.98,2.35,"Berichts-/Prüfungstermin",GREY)]
-yl=1.9
-for vx,vw,t,c in ins:
-    shape(s,RR,sx(vx),yl,vw*scale,0.5,fill=c,radius=0.12)
-    box(s,sx(vx)+0.04,yl,vw*scale-0.08,0.5,[para(t,8.5,WHITE,BFONT,bold=True,a='c',ls=9.5)],anchor='m')
-box(s,LEFT,2.5,8,0.22,[para("M&A-PHASEN & GATES",10,ORANGE,HFONT,bold=True)])
-phases=[(0.0,2.15,"0","Sourcing"),(2.22,1.55,"1","NDA & Datenraum"),
-        (3.84,2.0,"2","Angebot / LOI"),(5.92,2.0,"3","DD & Bewertung"),
-        (8.01,1.9,"4","Verbindl. Angebot"),(9.98,1.15,"5","Signing"),(11.21,1.12,"6","Closing")]
-yp=2.74
-for vx,vw,n,t in phases:
-    shape(s,RR,sx(vx),yp,vw*scale,0.66,fill=BLUETINT,line=BLUE,lw=1,radius=0.10)
-    box(s,sx(vx)+0.06,yp+0.02,0.4,0.3,[para(n,14,BLUE,HFONT,bold=True)])
-    box(s,sx(vx)+0.05,yp+0.32,vw*scale-0.1,0.32,[para(t,8,DARK,BFONT,bold=True,ls=8.5)])
-gates=[(1.075,"G0","Target ok"),(2.995,"G1","Datenraum"),(4.84,"G2","LOI"),
-       (6.92,"G3","DD fertig"),(8.96,"G4","Einigung"),(10.555,"G5","Signing¹"),(11.77,"G6","Closing")]
-gy=3.58
-for cx,g,t in gates:
-    cxi=sx(cx)
-    d=shape(s,DIA,cxi-0.24,gy,0.48,0.48,fill=ORANGE)
-    label(s,d,g,9.5,"3A2A00",BFONT,anchor='m')
-    lw=1.45
-    lx=max(LEFT,min(cxi-lw/2,RIGHT-lw))
-    box(s,lx,gy+0.5,lw,0.3,[para(t,8,GREY,BFONT,a='c')])
-b1=4.52
-shape(s,RR,LEFT,b1,CW,0.42,fill=BLUE,radius=0.08)
-box(s,LEFT+0.2,b1,CW-0.4,0.42,[{'a':'l','ls':12,'r':[{'t':"Durchgehend   ",'s':10.5,'c':LIME,'f':HFONT,'b':True},{'t':"C-Level-/Entscheider-Mandat — spätestens ab dem indikativen Angebot (LOI)",'s':10.5,'c':WHITE,'f':BFONT}]}],anchor='m')
-b2=5.02
-shape(s,RR,LEFT,b2,CW,0.42,fill=GREEN,radius=0.08)
-box(s,LEFT+0.2,b2,CW-0.4,0.42,[{'a':'l','ls':12,'r':[{'t':"Parallel   ",'s':10.5,'c':"EAF6EC",'f':HFONT,'b':True},{'t':"Kassen-/Zulassungsklärung & Personalübergang (§ 613a) laufen mit",'s':10.5,'c':WHITE,'f':BFONT}]}],anchor='m')
-box(s,LEFT,5.6,CW,0.6,[
-  para("¹ Signing unter aufschiebender Bedingung: Zustimmung von Gläubigerausschuss + Gericht.",9.5,GREY,BFONT,italic=True,sa=2),
-  para("Best-Practice-Kaufzeitpunkt: im vorläufigen Verfahren / rund um die Eröffnung — bevor Patienten & Fachkräfte abwandern.",10,ORANGE,BFONT,bold=True,italic=True)])
+s=content_slide("Zeitplan: von der Krise bis zum Closing")
+T0X=LEFT+2.05; TW=RIGHT-T0X; MMIN=-1; MMAX=8
+def tx(m): return T0X+(m-MMIN)/(MMAX-MMIN)*TW
+box(s,LEFT,1.6,1.95,0.26,[para("Monate ab Antrag →",8.5,GREY,BFONT,italic=True)],anchor='m')
+shape(s,RECT,T0X,2.1,TW,0.014,fill=BORDER)
+for m,lbl in [(0,"T0 · Antrag"),(3,"+3 · Eröffnung"),(6,"+6 Mon.")]:
+    box(s,tx(m)-0.9,1.58,1.8,0.28,[para(lbl,8.5,GREY,HFONT,bold=True,a='c')])
+for m in (0,3):
+    shape(s,RECT,tx(m),2.1,0.012,3.35,fill=BORDER)
+def lane_lab(y,text,color):
+    box(s,LEFT,y-0.06,1.94,0.54,[para(text,8.5,color,HFONT,bold=True,ls=9.5)],anchor='m')
+def seg(m1,m2,y,fill,txt=None,fs=8,tcol=WHITE):
+    x=tx(m1); w=max(tx(m2)-tx(m1),0.15)
+    shape(s,RR,x,y,w,0.42,fill=fill,radius=0.14)
+    if txt: box(s,x+0.05,y,w-0.1,0.42,[para(txt,fs,tcol,BFONT,bold=True,a='c',ls=9)],anchor='m')
+def ms(m,y,text,w=1.7):
+    x=tx(m); d=0.24
+    shape(s,DIA,x-d/2,y+0.09,d,d,fill=ORANGE)
+    lx=max(LEFT,min(x-w/2,RIGHT-w))
+    box(s,lx,y+0.44,w,0.32,[para(text,7.5,DARK,BFONT,bold=True,a='c',ls=8.5)])
+# Lane 1 — Insolvenzverfahren
+y1=2.35
+lane_lab(y1,"Insolvenzverfahren",BLUE)
+seg(-1,0,y1,GREY,"Krise")
+seg(0,3,y1,GREEN,"Vorläufiges Verfahren · Insolvenzgeld (bis 3 Mon.)")
+seg(3,8,y1,BLUEDK,"Eröffnetes Verfahren")
+ms(0,y1,"Antrag (T0)"); ms(3,y1,"Eröffnung"); ms(5,y1,"Berichtstermin")
+# Lane 2 — M&A-Arbeit (Käufer)
+y2=3.17
+lane_lab(y2,"M&A-Arbeit (Käufer)",ORANGE)
+seg(-0.3,3,y2,BLUE,"~6–10 Wochen: Sourcing · NDA · LOI · DD · Angebot")
+ms(3,y2,"Signing¹")
+# Lane 3 — Weg A: Regelinsolvenz -> Asset Deal
+y3=3.99
+lane_lab(y3,"Weg A · Regelinsolvenz → Asset Deal",BLUE)
+seg(3,4.1,y3,BLUE,"Verkauf & Vollzug")
+ms(3.55,y3,"Gläubigerausschuss ✓ → Closing",2.0)
+box(s,tx(4.3),y3+0.05,3.2,0.32,[para("schnell — um die Eröffnung",8.5,GREEN,BFONT,bold=True,italic=True)],anchor='m')
+# Lane 4 — Weg B: Schutzschirm/Eigenverwaltung -> Insolvenzplan
+y4=4.81
+lane_lab(y4,"Weg B · Schutzschirm → Insolvenzplan",BLUEDK)
+seg(0,3,y4,TEAL,"Schutzschirm / Planvorbereitung (max. 3 Mon.)")
+seg(3,7,y4,BLUEDK,"Insolvenzplan-Verfahren")
+ms(0,y4,"Bescheinigung § 270d"); ms(3,y4,"Planvorlage"); ms(5,y4,"Abstimmungstermin"); ms(7,y4,"Planbestätigung = Closing")
+# Notes
+box(s,LEFT,5.62,CW,0.28,[{'a':'l','r':[{'t':"Durchgehend:  ",'s':9.5,'c':ORANGE,'f':HFONT,'b':True},{'t':"C-Level-Mandat (ab LOI) · Kassen-/Zulassungsklärung · Personalübergang (§ 613a)",'s':9.5,'c':DARK,'f':BFONT}]}])
+box(s,LEFT,5.9,CW,0.28,[{'a':'l','r':[{'t':"◆ Meilenstein    ",'s':9,'c':ORANGE,'f':BFONT,'b':True},{'t':"¹ Signing unter Vorbehalt der Zustimmung von Gläubigerausschuss + Gericht.",'s':9,'c':GREY,'f':BFONT,'i':True}]}])
+box(s,LEFT,6.16,CW,0.28,[para("Bester Kaufzeitpunkt: im vorläufigen Verfahren — Insolvenzgeld trägt die Löhne, bevor Patienten & Fachkräfte abwandern.",9.5,GREEN,BFONT,bold=True,italic=True)])
 
 # =====================================================================
 # 7 — PHASEN kompakt (Tabelle)
