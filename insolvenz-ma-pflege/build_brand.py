@@ -223,56 +223,55 @@ box(s,LEFT+2.25,ty+0.16,CW-2.4,1.3,[
     para("Im Asset Deal geht er NICHT automatisch über → drohende Abrechnungslücke. Betreiberwechsel vorab mit den Kassen klären; in der Intensivpflege ist der Insolvenzplan deshalb oft überlegen.",11.5,"E9F1F8",BFONT,ls=14)],anchor='m')
 
 # =====================================================================
-# 6 — ZEITPLAN / GANTT (Krise -> Closing, parallele Spuren + Milestones)
+# 6 — ZEITPLAN / GANTT (ab Antrag -> Closing; Milestones UNTER den Balken)
 # =====================================================================
-s=content_slide("Zeitplan: von der Krise bis zum Closing")
-T0X=LEFT+2.05; TW=RIGHT-T0X; MMIN=-1; MMAX=8
+s=content_slide("Zeitplan: vom Insolvenzantrag bis zum Closing")
+T0X=LEFT+2.05; TW=RIGHT-T0X; MMIN=0; MMAX=8; BARH=0.38
 def tx(m): return T0X+(m-MMIN)/(MMAX-MMIN)*TW
-box(s,LEFT,1.6,1.95,0.26,[para("Monate ab Antrag →",8.5,GREY,BFONT,italic=True)],anchor='m')
-shape(s,RECT,T0X,2.1,TW,0.014,fill=BORDER)
+# Krise nur als Vorlauf (nicht im Zeitplan)
+box(s,LEFT,1.55,T0X-LEFT-0.12,0.3,[para("Krise / drohende ZU  →",8.5,GREY,BFONT,italic=True,a='r')],anchor='m')
+shape(s,RECT,T0X,2.0,TW,0.014,fill=BORDER)
 for m,lbl in [(0,"T0 · Antrag"),(3,"+3 · Eröffnung"),(6,"+6 Mon.")]:
-    box(s,tx(m)-0.9,1.58,1.8,0.28,[para(lbl,8.5,GREY,HFONT,bold=True,a='c')])
-for m in (0,3):
-    shape(s,RECT,tx(m),2.1,0.012,3.35,fill=BORDER)
+    box(s,tx(m)+0.02,1.55,2.0,0.28,[para(lbl,8.5,GREY,HFONT,bold=True,a='l')])
+for m in (3,6):
+    shape(s,RECT,tx(m),2.0,0.012,3.9,fill=BORDER)
 def lane_lab(y,text,color):
-    box(s,LEFT,y-0.06,1.94,0.54,[para(text,8.5,color,HFONT,bold=True,ls=9.5)],anchor='m')
+    box(s,LEFT,y-0.02,1.94,0.46,[para(text,8.5,color,HFONT,bold=True,ls=9.5)],anchor='m')
 def seg(m1,m2,y,fill,txt=None,fs=8,tcol=WHITE):
     x=tx(m1); w=max(tx(m2)-tx(m1),0.15)
-    shape(s,RR,x,y,w,0.42,fill=fill,radius=0.14)
-    if txt: box(s,x+0.05,y,w-0.1,0.42,[para(txt,fs,tcol,BFONT,bold=True,a='c',ls=9)],anchor='m')
+    shape(s,RR,x,y,w,BARH,fill=fill,radius=0.14)
+    if txt: box(s,x+0.06,y,w-0.12,BARH,[para(txt,fs,tcol,BFONT,bold=True,a='c',ls=9)],anchor='m')
 def ms(m,y,text,w=1.7):
-    x=tx(m); d=0.24
-    shape(s,DIA,x-d/2,y+0.09,d,d,fill=ORANGE)
+    x=tx(m)
+    shape(s,DIA,x-0.09,y+BARH+0.05,0.18,0.18,fill=ORANGE)
     lx=max(LEFT,min(x-w/2,RIGHT-w))
-    box(s,lx,y+0.44,w,0.32,[para(text,7.5,DARK,BFONT,bold=True,a='c',ls=8.5)])
+    box(s,lx,y+BARH+0.24,w,0.3,[para(text,7.5,DARK,BFONT,bold=True,a='c',ls=8.5)])
 # Lane 1 — Insolvenzverfahren
-y1=2.35
+y1=2.08
 lane_lab(y1,"Insolvenzverfahren",BLUE)
-seg(-1,0,y1,GREY,"Krise")
 seg(0,3,y1,GREEN,"Vorläufiges Verfahren · Insolvenzgeld (bis 3 Mon.)")
 seg(3,8,y1,BLUEDK,"Eröffnetes Verfahren")
 ms(0,y1,"Antrag (T0)"); ms(3,y1,"Eröffnung"); ms(5,y1,"Berichtstermin")
 # Lane 2 — M&A-Arbeit (Käufer)
-y2=3.17
+y2=3.04
 lane_lab(y2,"M&A-Arbeit (Käufer)",ORANGE)
-seg(-0.3,3,y2,BLUE,"~6–10 Wochen: Sourcing · NDA · LOI · DD · Angebot")
+seg(0,3,y2,BLUE,"~6–10 Wochen: Sourcing · NDA · LOI · DD · Angebot")
 ms(3,y2,"Signing¹")
 # Lane 3 — Weg A: Regelinsolvenz -> Asset Deal
-y3=3.99
+y3=4.00
 lane_lab(y3,"Weg A · Regelinsolvenz → Asset Deal",BLUE)
-seg(3,4.1,y3,BLUE,"Verkauf & Vollzug")
-ms(3.55,y3,"Gläubigerausschuss ✓ → Closing",2.0)
-box(s,tx(4.3),y3+0.05,3.2,0.32,[para("schnell — um die Eröffnung",8.5,GREEN,BFONT,bold=True,italic=True)],anchor='m')
+seg(3,4.2,y3,BLUE,"Verkauf")
+box(s,tx(4.5),y3+0.02,3.4,0.34,[para("schnell — Closing um die Eröffnung",8.5,GREEN,BFONT,bold=True,italic=True)],anchor='m')
+ms(3.6,y3,"Gläubigerausschuss ✓ → Closing",2.1)
 # Lane 4 — Weg B: Schutzschirm/Eigenverwaltung -> Insolvenzplan
-y4=4.81
+y4=4.96
 lane_lab(y4,"Weg B · Schutzschirm → Insolvenzplan",BLUEDK)
 seg(0,3,y4,TEAL,"Schutzschirm / Planvorbereitung (max. 3 Mon.)")
 seg(3,7,y4,BLUEDK,"Insolvenzplan-Verfahren")
 ms(0,y4,"Bescheinigung § 270d"); ms(3,y4,"Planvorlage"); ms(5,y4,"Abstimmungstermin"); ms(7,y4,"Planbestätigung = Closing")
 # Notes
-box(s,LEFT,5.62,CW,0.28,[{'a':'l','r':[{'t':"Durchgehend:  ",'s':9.5,'c':ORANGE,'f':HFONT,'b':True},{'t':"C-Level-Mandat (ab LOI) · Kassen-/Zulassungsklärung · Personalübergang (§ 613a)",'s':9.5,'c':DARK,'f':BFONT}]}])
-box(s,LEFT,5.9,CW,0.28,[{'a':'l','r':[{'t':"◆ Meilenstein    ",'s':9,'c':ORANGE,'f':BFONT,'b':True},{'t':"¹ Signing unter Vorbehalt der Zustimmung von Gläubigerausschuss + Gericht.",'s':9,'c':GREY,'f':BFONT,'i':True}]}])
-box(s,LEFT,6.16,CW,0.28,[para("Bester Kaufzeitpunkt: im vorläufigen Verfahren — Insolvenzgeld trägt die Löhne, bevor Patienten & Fachkräfte abwandern.",9.5,GREEN,BFONT,bold=True,italic=True)])
+box(s,LEFT,5.95,CW,0.26,[{'a':'l','r':[{'t':"Durchgehend:  ",'s':9,'c':ORANGE,'f':HFONT,'b':True},{'t':"C-Level-Mandat (ab LOI) · Kassen-/Zulassungsklärung · Personal (§ 613a)      ",'s':9,'c':DARK,'f':BFONT},{'t':"◆ = Meilenstein",'s':9,'c':GREY,'f':BFONT,'i':True}]}])
+box(s,LEFT,6.21,CW,0.26,[{'a':'l','r':[{'t':"Bester Kaufzeitpunkt: im vorläufigen Verfahren (Insolvenzgeld trägt die Löhne).   ",'s':9,'c':GREEN,'f':BFONT,'b':True,'i':True},{'t':"¹ Signing unter Vorbehalt: Gläubigerausschuss + Gericht.",'s':9,'c':GREY,'f':BFONT,'i':True}]}])
 
 # =====================================================================
 # 7 — PHASEN kompakt (Tabelle)
