@@ -306,3 +306,38 @@ Timing = alles; Bestandszulassung besonders wertvoll (nahtlose Übernahme).
 - §74 SGB XI (Kündigung/Fristen) — https://www.sozialgesetzbuch-sgb.de/sgbxi/74.html
 - Pflegedienst-Abwicklung/Überleitung — https://advocura-rechtsanwaelte.de/pflegedienst-aufgeben-abwicklung/
 - Kündigung durch Pflegedienst (Rechte) — https://www.biva.de/aus-unserer-beratungsarbeit/was-tun-wenn-der-pflegedienst-kuendigt/
+
+---
+
+# Notizen — Begriffsklärung Vergleichsfolie (Normaler M&A vs. Distressed)
+
+## "Weniger DD möglich" — warum (Bücher existieren doch)?
+Nicht wegen fehlendem Zugang, sondern:
+1. Zeitdruck: Verwalter verkauft schnell (Masse verbrennt) -> Wochen statt Monate -> triagieren.
+2. Datenqualität: Buchhaltung im Rückstand/chaotisch/lückenhaft, Management/Personal weg -> Bücher
+   existieren, aber oft nicht belastbar.
+3. Keine Garantien + kein Netz: Verwalter kennt Firma kaum, gibt keine Zusicherungen -> alles selbst
+   verifizieren; Übersehenes = eigener Verlust (im Normal-M&A fängt W&I das auf).
+Pflege-Spezifik: das Entscheidende (Abrechnungs-/Regressrisiko, MD-Status, Personalqualifikation,
+echte Patientenlage) steht gar nicht in den Büchern -> operative DD im kurzen Fenster kaum vollständig.
+=> Aussage der Folie: "weniger gründliche DD, volles Risiko beim Käufer", nicht "weniger Zugang".
+
+## W&I (Warranty & Indemnity Insurance)
+Normaler M&A: Verkäufer gibt Garantien (Bilanz korrekt, keine versteckten Schulden/Prozesse, Steuern
+bezahlt). Verstoß -> Schadensersatz. W&I-Police verlagert dieses Risiko auf einen Versicherer ->
+Verkäufer "clean exit", Käufer hat solventen Anspruchsgegner.
+Distressed: Verwalter gibt KEINE Garantien ("wie besichtigt") -> nichts zu versichern -> Netz entfällt
+-> Risiko über Preis abfedern (Risikoabschlag).
+
+## "§ 613a, aber Kündigung max. 3 Mon."
+- § 613a BGB (Betriebsübergang): alle Arbeitsverhältnisse gehen automatisch auf Erwerber über (gleiche
+  Konditionen, Betriebszugehörigkeit); kein Herauspicken. Gilt auch im Asset Deal + in der Insolvenz;
+  das Einzige, das im Asset Deal automatisch mitkommt.
+- § 113 InsO: Kündigungsfrist in der Insolvenz auf max. 3 Monate zum Monatsende gedeckelt (statt bis
+  6-7 Mon.). Plus erleichterte Sozialauswahl (§ 125 InsO) + Transfergesellschaft.
+=> Personal wird übernommen (§ 613a), ABER Überhang schneller/billiger abbaubar (max 3 Mon., § 113 InsO)
+   als im Normal-M&A. Praktisch: Verwalter kündigt Überhang / Transfergesellschaft VOR dem Übergang,
+   Käufer übernimmt nur benötigtes Personal.
+
+## Präsi-To-do
+- Ggf. Backup-/Glossarfolie mit W&I, § 613a/§ 113 InsO, "DD unter Zeitdruck" für Rückfragen im Vortrag.
