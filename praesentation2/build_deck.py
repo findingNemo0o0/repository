@@ -304,8 +304,8 @@ timeline = [
     ("2022/23", "Flensburg: alle Grundschulen, keine Einzelanträge mehr", OLIVE),
     ("2024", "EU-Ausschreibung „Klassenassistenz“ — bis heute kein Zuschlag. "
              "Kreistag verschiebt am 11.12.2024 um zwei Jahre", RED),
-    ("seit 2025", "Robert Bosch Stiftung und Deutsche Telekom Stiftung bewerten die "
-                  "Poolmodelle und fördern die Weiterentwicklung", BLUE),
+    ("seit 2025", "Robert Bosch und Telekom Stiftung begleiten den Landesprozess. "
+                  "Ein Ergebnis ist bislang nicht veröffentlicht", BLUE),
     ("2026/27", "Hamburg: Kombinationsmaßnahmen, eine Kraft für mehrere Kinder", BLUE),
 ]
 y = 1.90

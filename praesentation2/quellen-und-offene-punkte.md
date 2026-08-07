@@ -13,7 +13,7 @@
 |---|---|
 | Pool + MPT ist der Zielzustand | Landtag SH, **Drs. 20/3271 vom 11.06.2025**, Antwort auf Frage 3: Die Zusammenführung sei „ein wichtiger Baustein der multiprofessionellen Zusammenarbeit an Schulen" |
 | Kein Abschlusstermin | ebd.: „kann ein Zeitpunkt für den Prozessabschluss nicht genannt werden" |
-| Bosch- und Telekom-Stiftung bewerten die Poolmodelle | ebd. |
+| Rolle der beiden Stiftungen | Drs. 20/3271: Die bestehenden Poolmodelle würden „durch die Deutsche Telekom Stiftung sowie die Robert Bosch Stiftung **bewertet und die Weiterentwicklung unterstützt**". Die Ministerin (Rede 28.02.2025) beschreibt sie als „**engagierte Partner**", die „verschiedene Akteure zusammenbringen, den Prozess unterstützen und neue Wege der rechtskreisübergreifenden Zusammenarbeit für das gesamte Land entwickeln" — gemeinsam mit den kommunalen Landesverbänden, Kreisen, kreisfreien Städten, Schulträgern, Schulen und Schulaufsicht. **Prozesspartner, nicht externe Gutachter** |
 | Testträger Kreis Pinneberg: **Familienräume Karin Struckmeier**, 7 Grundschulen Tornesch-Uetersen, Vertrag 26.06.2018 | Kreis Pinneberg, PM „Neues Modell für Schulbegleitungen wird eingeführt"; familienraeume.de |
 | Ostholstein: 7 Modellschulen seit 11/2020 — **drei Einzelschulen** (Neustädter Bucht, Bad Schwartau, Schönwalde) und die **Modellregion Fehmarn mit vier Schulen** (u. a. Inselschule, Grundschule Burg, Montessori-Schule). **Je Schule ein eigener Pool** | DISW-Gesamtevaluation 20.11.2023, S. 5, 18, 21 f., 72 f.; Landtag SH Drs. 20/2643(neu) |
 | Lübeck seit 2013/14, Flensburg seit 2022/23 flächendeckend | Drs. 20/2643(neu) |
@@ -130,6 +130,13 @@ verpflichtende Zusammenarbeit mit Kooperationspartnern), Schutzauftrag nach §§
 1. **Der für Q1/2026 angekündigte Sachstandsbericht der Landesregierung** (zugesagt in
    Drs. 20/3271) war in den Landtagsdrucksachen nicht auffindbar. Vor dem Termin nachfassen —
    er ist die aktuellste Quelle zum Stand der Zusammenführung.
+1a. **Ein Ergebnis der Stiftungsbegleitung ist nicht veröffentlicht.** Gesucht wurde auf
+   `bosch-stiftung.de`, `telekom-stiftung.de`, `deutsches-schulportal.de`, im Jugendhilfeportal
+   und in den Landtagsdrucksachen: **keine Studie, kein Gutachten, keine Handreichung, keine
+   Empfehlung.** Die Stiftungen moderieren den Landesprozess, sie begutachten ihn nicht von
+   außen. Wer den Zwischenstand kennen will, muss beim Ministerium oder bei den Stiftungen
+   direkt fragen — das ist einer der wenigen Punkte, an denen ein Informationsvorsprung
+   tatsächlich zu holen wäre.
 2. **Ausgang des Pinneberger Vergabeverfahrens.** Belegt ist nur: keine veröffentlichte
    Zuschlagsbekanntmachung. Ob aufgehoben, ausgesetzt oder ruhend, muss beim Kreis erfragt
    werden (klassenassistenz@kreis-pinneberg.de).
