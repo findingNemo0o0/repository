@@ -169,6 +169,20 @@ verpflichtende Zusammenarbeit mit Kooperationspartnern), Schutzauftrag nach §§
 | `plan.docx` | Strukturvorgabe |
 | `build_fragenliste.js` | erzeugt die Fragenliste für das Gespräch mit der Eigentümerin |
 | `Fragenliste-Eigentuemerin-SKP.docx` | 38 Fragen in acht Blöcken, mit Spalte für Antworten |
+| `normalize_deck.py` | vereinheitlicht das Design einer extern überarbeiteten Fassung |
+| `SKP-Research-geprueft-sortiert.pptx` | 11 Folien, Design vereinheitlicht |
+
+## Design-Regeln des Decks
+
+| Element | Wert |
+|---|---|
+| Titel | 20 pt, fett, x 1,56 · y 1,00 · b 10,98 · h 0,57 |
+| Kopfband (Eyebrow) | Layout-Vorgabe, auf jeder Folie gefüllt |
+| Spaltenkopf | 11 pt Quicksand fett, `#1A70B8` |
+| Kartenüberschrift | 9,5 pt Quicksand fett, Farbe nach Kartenfüllung |
+| Fließtext | 8,6 pt Open Sans `#3D3D3D` |
+| Aufzählungszeichen | `▪` im Akzent, Text in Grundfarbe |
+| Quellenzeile | 6,8 pt Open Sans `#888888`, x 1,56 · y 7,05 · b 9,50 |
 
 Nachbauen: `python3 make_maps.py && python3 build_deck.py && python3 check_layout.py <deck>`
 Die Kreisgrenzen liegen als `kreisgrenzen.geojson` im Ordner.
